@@ -13,7 +13,7 @@ export const ExperiencePage = () => {
     <div className="flex flex-col">
       <div className="flex flex-col">
         {data.work.map((work) => (
-          <p className="my-6">{work.description}</p>
+          <p key={work.startDate} className="my-6">{work.description}</p>
         ))}
       </div>
     </div>
