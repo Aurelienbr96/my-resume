@@ -12,6 +12,8 @@
   },
   "dependencies": {
     "@tanstack/react-query": "^5.24.1",
+    "dayjs": "^1.11.10",
+    "flowbite-react": "^0.7.2",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.4",
     "react": "^18.2.0",
