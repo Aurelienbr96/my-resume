@@ -1,24 +1,38 @@
-import { Link, Outlet } from "react-router-dom";
+import { GiHamburgerMenu } from "react-icons/gi";
 
-export const Layout = () => (
-  <div className="flex flex-col  h-screen px-6">
-    <div className="flex justify-around my-6">
-      <Link className="text-3xl text-light-purple" to="/">
-        Aurelien Brachet
-      </Link>
-      <div className="flex justify-around text-light-purple">
-        <Link className="mx-8" to="/about">
-          ABOUT ME
-        </Link>
-        <Link className="mx-8" to="/experiences">
-          EXPERIENCES
-        </Link>
-        <Link className="mx-8" to="/contacts">
-          CONTACTS
-        </Link>
+import { Outlet } from "react-router-dom";
+
+import { useRetractableMenu } from "../hooks/useRetractableMenu";
+import { ButtonMenu } from "./ButtonMenu";
+import { Menu } from "./Menu";
+import useBreakpoints from "../../common/hooks/useBreakPoints";
+
+export const Layout = () => {
+  const { isMenuRetracted, handleMenuRetracted } = useRetractableMenu();
+  const { isXs } = useBreakpoints();
+
+  return (
+    <div id="outer-container" className="flex flex-col px-6">
+      <div className="flex justify-around">
+        {isXs && (
+          <button onClick={handleMenuRetracted}>
+            <GiHamburgerMenu />
+          </button>
+        )}
+
+        <ButtonMenu className="text-3xl text-light-purple mt-4" to="/">
+          Aurelien Brachet
+        </ButtonMenu>
+        <Menu
+          isOpen={isMenuRetracted}
+          handleOnMobileMenuClick={handleMenuRetracted}
+        />
+      </div>
+      <div id="page-wrap">
+        <div id="details" className="mt-6">
+          <Outlet />
+        </div>
       </div>
     </div>
-
-    <Outlet />
-  </div>
-);
+  );
+};

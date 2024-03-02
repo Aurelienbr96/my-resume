@@ -1,7 +1,5 @@
 export const ContactPage = () => (
-  <div className="flex flex-col">
-    <div className="flex">
-      <p className="text-3xl">Hi this is my contacts</p>
-    </div>
+  <div>
+    <h1 className="text-3xl text-center">Contacts informations</h1>
   </div>
 );
