@@ -1,5 +1,3 @@
-import me from "../../assets/img/me.jpeg";
-
 export const ContactPage = () => (
   <div className="flex flex-col">
     <div className="flex">
