@@ -6,6 +6,13 @@ import {
   QueryClientProvider,
 } from "@tanstack/react-query";
 
+import dayjs from 'dayjs';
+import advancedFormat from 'dayjs/plugin/advancedFormat';
+import customParseFormat from 'dayjs/plugin/customParseFormat';
+
+dayjs.extend(customParseFormat);
+dayjs.extend(advancedFormat);
+
 const queryClient = new QueryClient();
 
 function App() {

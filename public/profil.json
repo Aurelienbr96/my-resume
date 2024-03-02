@@ -22,6 +22,7 @@
   },
   "work": [
     {
+      "logo": "https://media.licdn.com/dms/image/C4E0BAQE-7EfSMlZAVQ/company-logo_200_200/0/1631316758542?e=1717632000&v=beta&t=wFyhXkzfYK3unFeyocEjGxz9QAXxkjwKTSm2FQmBP9o",
       "role": "Development Lead ReactJS & React Native",
       "companyName": "Prium Solutions",
       "status": "Freelance",
@@ -31,6 +32,7 @@
       "description": "As a Lead Developer specializing in React JS and React Native, I led the complete overhaul of Prium Portage's internal website, which was burdened by a significant accumulation of technical debt. I conducted the selection process and provided recommendations regarding the technical stack to be adopted, including React Hook Form, Tailwind, Vite, Axios, XState, among others. I established a scalable architecture with unit tests while ensuring the implementation of user interfaces designed by the UI/UX design team. Additionally, I worked on the development from scratch of the Prium One mobile application."
     },
     {
+      "logo": "https://media.licdn.com/dms/image/C4E0BAQF0PeCwqftXBw/company-logo_200_200/0/1651594527767/folkhq_logo?e=1717632000&v=beta&t=3ZribKFEn75uxsu4z3duF1NrdFAOCGFhYvltrHtumXw",
       "role": "Développeur React JS",
       "companyName": "folk",
       "status": "Freelance",
@@ -40,6 +42,7 @@
       "description": "One month mission where I was helping to improve the test coverage of the application (Jest & react-testing-library)"
     },
     {
+      "logo": "https://media.licdn.com/dms/image/D4E0BAQEAd0aSequAmQ/company-logo_200_200/0/1666266859617/egis_logo?e=1717632000&v=beta&t=zDaVAoVjiFoRdcSjfqrWpID7by2jUuCQWEVH7noulZY",
       "role": "ReactJS developer",
       "companyName": "Egis",
       "status": "Freelance",
@@ -49,6 +52,7 @@
       "description": "Development of a POC for the city of Amsterdam. This was a full remote month project where I have had the opportunity to discover new technologies of the ReactJS ecosystem: - XState, - ZeStand."
     },
     {
+      "logo": "https://media.licdn.com/dms/image/C560BAQGtreG9Ph4jCQ/company-logo_200_200/0/1630639409659/log_in_line_logo?e=1717632000&v=beta&t=Eqb2kCaHPbWimVkVUqkA1MfhrzgqG3_hR0Y0FH-4ZDk",
       "role": "React Native developer",
       "companyName": "Log'​in Line",
       "status": "Freelance",
@@ -58,6 +62,7 @@
       "description": "Short-term mission where I assisted in the development of the Fantasy Rugby World application"
     },
     {
+      "logo": "https://media.licdn.com/dms/image/C4E0BAQHK1L0f2g3SZA/company-logo_200_200/0/1674655319645/dokkigroupe_logo?e=1717632000&v=beta&t=XvLSN_a1aKSTQ8b7ka3AcNRxTq7jw0reGNwWzAQHOg0",
       "role": "Lead React Native developer",
       "companyName": "Log'​in Line",
       "status": "Freelance",
