@@ -1,5 +1,10 @@
 {
     "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+    "menu": {
+        "about": "a propos",
+        "experiences": "experiences",
+        "contact": "contacts"
+    },
     "basics": {
       "name": "Aurélien Brachet",
       "label": "Recherche d'une mission longue durée en React JS / RN.",

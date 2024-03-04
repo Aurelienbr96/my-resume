@@ -1,5 +1,10 @@
 {
     "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+    "menu": {
+        "about": "about me",
+        "experiences": "experiences",
+        "contact": "contact"
+    },
     "basics": {
       "name": "Aurélien Brachet",
       "label": "React Native/ReactJS developer",

@@ -27,3 +27,6 @@ jobs:
 
       - name: Run TypeScript
         run: npm run build
+
+      - name: Run Jest
+        run: npm run test
