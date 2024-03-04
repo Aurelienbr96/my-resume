@@ -1,6 +1,8 @@
 import useBreakpoints from "../../common/hooks/useBreakPoints";
 import { slide as MobileMenu } from "react-burger-menu";
 import { ButtonMenu } from "./ButtonMenu";
+import { LanguageSwitch } from "../../i18n/components/LanguageSwitch";
+import { supportedLanguages } from "../../i18n/constants/supportedLanguages";
 
 const styles = {
   bmBurgerButton: {
@@ -28,6 +30,7 @@ const ButtonsMenu = () => (
     <ButtonMenu className="mx-8" to="/contacts">
       CONTACTS
     </ButtonMenu>
+    <LanguageSwitch languages={supportedLanguages} />
   </>
 );
 
@@ -42,7 +45,7 @@ export const Menu = ({
 
   if (!isXs) {
     return (
-      <div className="mt-6 text-light-purple">
+      <div className="mt-6 flex items-center text-light-purple">
         <ButtonsMenu />
       </div>
     );

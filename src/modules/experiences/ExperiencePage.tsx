@@ -7,8 +7,14 @@ import {
   TimelinePoint,
 } from "flowbite-react";
 import dayjs from "dayjs";
+import { useTranslation } from "react-i18next";
+import enData from "../i18n/locales/en.json";
+
+export type JSONData = typeof enData;
 
 export const ExperiencePage = () => {
+  const { t } = useTranslation();
+
   const { data, isLoading } = useQuery({
     queryKey: ["jsonData"],
     queryFn: fetchData,
@@ -16,11 +22,14 @@ export const ExperiencePage = () => {
 
   if (isLoading || !data) return null;
 
+  
+  const workData = t('work', { returnObjects: true }) as JSONData["work"];
+
   return (
     <div>
       <h1 className="text-3xl text-center">Experiences and education</h1>
       <Timeline className="mt-6">
-        {data.work.map((work) => (
+        {workData.map((work) => (
           <TimelineItem key={work.startDate}>
             <TimelinePoint />
             <TimelineContent>
@@ -36,7 +45,7 @@ export const ExperiencePage = () => {
                   dayjs(work.endDate).format("MMM. YYYY")}
               </Timeline.Time>
               <Timeline.Body className="my-6">
-                {work.companyName} - {work.status} <br />
+                {work.name} - {work.status} <br />
                 {work.description}
               </Timeline.Body>
             </TimelineContent>

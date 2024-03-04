@@ -1,0 +1,266 @@
+{
+    "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+    "basics": {
+      "name": "Aurélien Brachet",
+      "label": "React Native/ReactJS developer",
+      "image": "",
+      "introduction": "Hi, I am Aurelien, a senior ReactJS developer",
+      "email": "aurelienbrachet123@gmail.com",
+      "phone": "",
+      "url": "",
+      "summary": "I am a freelance developer specializing in the ReactJS ecosystem with more than 5 years of experience using React for the web and mobile. Working primarily as a front-end developer with React Native. I have a master's specialized in computer sciences. I have been working on a wide variety of projects, mainly in France but also abroad.",
+      "location": {
+        "countryCode": "FR",
+        "address": ""
+      },
+      "profiles": [
+        {
+          "network": "LinkedIn",
+          "username": "aurélien-brachet-146556141",
+          "url": "https://www.linkedin.com/in/aurélien-brachet-146556141/"
+        }
+      ]
+    },
+    "work": [
+      {
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQE-7EfSMlZAVQ/company-logo_200_200/0/1631316758542?e=1717632000&v=beta&t=wFyhXkzfYK3unFeyocEjGxz9QAXxkjwKTSm2FQmBP9o",
+        "role": "Development Lead ReactJS & React Native",
+        "name": "Prium Solutions",
+        "status": "Freelance",
+        "startDate": "2021-07-01",
+        "endDate": "2023-09-31",
+        "location": "remote",
+        "description": "As a Lead Developer specializing in React JS and React Native, I led the complete overhaul of Prium Portage's internal website, which was burdened by a significant accumulation of technical debt. I conducted the selection process and provided recommendations regarding the technical stack to be adopted, including React Hook Form, Tailwind, Vite, Axios, XState, among others. I established a scalable architecture with unit tests while ensuring the implementation of user interfaces designed by the UI/UX design team. Additionally, I worked on the development from scratch of the Prium One mobile application."
+      },
+      {
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQF0PeCwqftXBw/company-logo_200_200/0/1651594527767/folkhq_logo?e=1717632000&v=beta&t=3ZribKFEn75uxsu4z3duF1NrdFAOCGFhYvltrHtumXw",
+        "role": "Développeur React JS",
+        "name": "folk",
+        "status": "Freelance",
+        "startDate": "2021-05-01",
+        "endDate": "2021-06-31",
+        "location": "remote",
+        "description": "One month mission where I was helping to improve the test coverage of the application (Jest & react-testing-library)"
+      },
+      {
+        "logo": "https://media.licdn.com/dms/image/D4E0BAQEAd0aSequAmQ/company-logo_200_200/0/1666266859617/egis_logo?e=1717632000&v=beta&t=zDaVAoVjiFoRdcSjfqrWpID7by2jUuCQWEVH7noulZY",
+        "role": "ReactJS developer",
+        "name": "Egis",
+        "status": "Freelance",
+        "startDate": "2021-03-01",
+        "endDate": "2021-05-31",
+        "location": "remote",
+        "description": "Development of a POC for the city of Amsterdam. This was a full remote month project where I have had the opportunity to discover new technologies of the ReactJS ecosystem: - XState, - ZeStand."
+      },
+      {
+        "logo": "https://media.licdn.com/dms/image/C560BAQGtreG9Ph4jCQ/company-logo_200_200/0/1630639409659/log_in_line_logo?e=1717632000&v=beta&t=Eqb2kCaHPbWimVkVUqkA1MfhrzgqG3_hR0Y0FH-4ZDk",
+        "role": "React Native developer",
+        "name": "Log'​in Line",
+        "status": "Freelance",
+        "startDate": "2020-07-01",
+        "endDate": "2020-09-31",
+        "location": "remote - Bordeaux",
+        "description": "Short-term mission where I assisted in the development of the Fantasy Rugby World application"
+      },
+      {
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQHK1L0f2g3SZA/company-logo_200_200/0/1674655319645/dokkigroupe_logo?e=1717632000&v=beta&t=XvLSN_a1aKSTQ8b7ka3AcNRxTq7jw0reGNwWzAQHOg0",
+        "role": "Lead React Native developer",
+        "name": "Dokki",
+        "status": "Freelance",
+        "startDate": "2020-01-01",
+        "endDate": "2020-05-31",
+        "location": "remote - Caen",
+        "description": "I was working on the Dokki application (https://apps.apple.com/tt/app/dokki-learn-play/id1524772965?ign-mpt=uo%3D2) as lead developer. I took charge of the project for 5 months and I was responsible for making the technical choices for the project. I implemented an architecture where the store was reused between the web app and mobile app part in TDD. I also participated in the formation of juniors and work-study students in the company. Redux, Redux Saga, Jest, Typescript."
+      }
+    ],
+    "volunteer": [],
+    "education": [
+      {
+        "institution": "Exia cesi",
+        "area": "IT specialized in development",
+        "studyType": "Engineer degree",
+        "startDate": "2016-12-31",
+        "endDate": "2019-12-31",
+        "score": "",
+        "courses": []
+      },
+      {
+        "institution": "University of the West of Scotland",
+        "area": "Mobile development",
+        "studyType": "Erasmus Semester",
+        "startDate": "2018-12-31",
+        "endDate": "2018-12-31",
+        "score": "",
+        "courses": []
+      },
+      {
+        "institution": "Institut Lemonnier",
+        "area": "Informatique",
+        "studyType": "Two years technical degree in IT",
+        "startDate": "2014-12-31",
+        "endDate": "2016-12-31",
+        "score": "",
+        "courses": []
+      },
+      {
+        "institution": "Institut saint lô",
+        "area": "Scientifique",
+        "studyType": "A level",
+        "startDate": "2011-12-31",
+        "endDate": "2014-12-31",
+        "score": "",
+        "courses": []
+      }
+    ],
+    "awards": [],
+    "certificates": [
+      {
+        "name": "REACTJS QUIZ NIVEAU INTERMÉDIAIRE",
+        "issuer": "SkillValue",
+        "url": "https://skillvalue.com/fr/certificate/9AIzLRV9s5h7nJooa3xFGztZ02aJUKZPyRYJ2ifhEAiI9Xc0vEsNgGRO5xp9"
+      },
+      {
+        "name": "REDUX QUIZZ INTERMEDIAIRE",
+        "issuer": "SkillValue",
+        "url": "https://skillvalue.com/fr/certificate/k52Gou21ame5fG3SqnkVi7hDWh5L4Tvddb6YJy9hbAyKyEPgffJNNuI68olt"
+      }
+    ],
+    "publications": [],
+    "skills": [
+      {
+        "name": "ReactJS",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "TypeScript",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Jest",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Tailwind CSS",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "React.js",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Développement pour Android",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "HTML5",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "React Native ",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "GitHub",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "MySQL",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "PHP",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "firebase",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Java",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "JavaScript",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Android",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "NoSQL",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Feuilles de style en cascade (CSS)",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Flow",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Babel",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Gestion de projet",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "FeatherJS",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "NodeJS",
+        "level": "",
+        "keywords": []
+      }
+    ],
+    "languages": [
+      {
+        "language": "fr",
+        "fluency": "Native Speaker"
+      },
+      {
+        "fluency": "Professional Working",
+        "language": "Anglais"
+      },
+      {
+        "fluency": "Native Speaker",
+        "language": "Français"
+      },
+      {
+        "fluency": "Elementary",
+        "language": "Russe"
+      }
+    ],
+    "interests": [],
+    "references": [],
+    "projects": [],
+    "meta": {
+      "version": "v1.0.0",
+      "canonical": "https://github.com/jsonresume/resume-schema/blob/v1.0.0/schema.json"
+    }
+  }
