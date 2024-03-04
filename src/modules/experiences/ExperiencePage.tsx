@@ -1,5 +1,3 @@
-import { useQuery } from "@tanstack/react-query";
-import { fetchData } from "../common/fetchData";
 import {
   Timeline,
   TimelineContent,
@@ -15,15 +13,7 @@ export type JSONData = typeof enData;
 export const ExperiencePage = () => {
   const { t } = useTranslation();
 
-  const { data, isLoading } = useQuery({
-    queryKey: ["jsonData"],
-    queryFn: fetchData,
-  });
-
-  if (isLoading || !data) return null;
-
-  
-  const workData = t('work', { returnObjects: true }) as JSONData["work"];
+  const workData = t("work", { returnObjects: true }) as JSONData["work"];
 
   return (
     <div>
