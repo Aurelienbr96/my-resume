@@ -1,10 +1,12 @@
 import classNames from "classnames";
 import me from "../../assets/img/me.jpeg";
 import useBreakpoints from "../common/hooks/useBreakPoints";
+import { useTranslation } from "react-i18next";
 
 export const HomePage = () => {
   const { isXs } = useBreakpoints();
-  console.log("isXs", isXs);
+  const { t } = useTranslation();
+
   const containerClassName = classNames({
     "flex justify-between": !isXs,
     "flex flex-col": isXs,
@@ -15,9 +17,7 @@ export const HomePage = () => {
   });
   return (
     <div className={containerClassName}>
-      <p className={textClassName}>
-        Hi, I am Aurelien, a senior ReactJS developer
-      </p>
+      <p className={textClassName}>{t("basics.introduction")}</p>
       <img className="rounded-lg" src={me} />
     </div>
   );

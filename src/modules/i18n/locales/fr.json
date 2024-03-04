@@ -1,0 +1,344 @@
+{
+    "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+    "menu": {
+        "about": "a propos",
+        "experiences": "experiences",
+        "contact": "contacts"
+    },
+    "basics": {
+      "name": "Aurélien Brachet",
+      "label": "Recherche d'une mission longue durée en React JS / RN.",
+      "image": "",
+      "email": "aurelienbrachet123@gmail.com",
+      "phone": "",
+      "introduction": "Bonjour je m'appelle Aurélien, développeur ReactJS / React Native.",
+      "url": "",
+      "summary": "Bonjour,\nspécialisé en Javascript et tout spécialement en ReactJS et React Native depuis 2017, je suis à la recherche d'une mission en freelance dans ces technologies.\n\nMa formation m'a aussi permis d'avoir acquis d'autres compétences en développement dans des technologies assez varié, BDD (MySQL, NoSQL), Backend (nodeJS, FeatherJS) aussi en gestion de projet.\n\nJ'ai eu la chance de pouvoir travailler dans des structures très variés allant d'une startup à de grands groupes, en France et à l'étranger, ce qui me permet d'être très polyvalent dans mon travail.",
+      "location": {
+        "countryCode": "FR",
+        "address": ""
+      },
+      "profiles": [
+        {
+          "network": "LinkedIn",
+          "username": "aurélien-brachet-146556141",
+          "url": "https://www.linkedin.com/in/aurélien-brachet-146556141/"
+        }
+      ]
+    },
+    "work": [
+      {
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQE-7EfSMlZAVQ/company-logo_200_200/0/1631316758542?e=1717632000&v=beta&t=wFyhXkzfYK3unFeyocEjGxz9QAXxkjwKTSm2FQmBP9o",
+        "name": "Prium Solutions",
+        "status": "Freelance",
+        "role": "Development Lead ReactJS & React Native",
+        "startDate": "2021-07-31",
+        "endDate": "2023-10-31",
+        "highlights": [],
+        "description": "En tant que développeur principal spécialisé en React JS et React Native, j'ai dirigé la refonte intégrale du site web interne de Prium Portage, lequel souffrait d'une accumulation significative de dette technique. J'ai procédé à la sélection et dispensé des recommandations quant à la stack technique à adopter, incluant React Hook Form, Tailwind, Vite, Axios, XState, entre autres. J'ai établi une architecture scalable, avec tests unitaires, tout en assurant l'implémentation des interfaces utilisateur conçues par l'équipe de design UI/UX.\n\nJ'ai aussi travaillé au développement from scratch de l'application mobile Prium one.",
+        "url": "https://www.linkedin.com/company/prium-solutions/",
+        "location": "Remote"
+      },
+      {
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQF0PeCwqftXBw/company-logo_200_200/0/1651594527767/folkhq_logo?e=1717632000&v=beta&t=3ZribKFEn75uxsu4z3duF1NrdFAOCGFhYvltrHtumXw",
+        "name": "folk",
+        "status": "Freelance",
+        "role": "Développeur React JS",
+        "startDate": "2021-05-31",
+        "endDate": "2021-06-30",
+        "highlights": [],
+        "description": "Mission de courte durée où j'ai travaillé sur l'augmentation du test coverage de l'application (Jest & react-testing-library)",
+        "url": "https://www.linkedin.com/company/folkhq/",
+        "location": "Remote"
+      },
+      {
+        "logo": "https://media.licdn.com/dms/image/D4E0BAQEAd0aSequAmQ/company-logo_200_200/0/1666266859617/egis_logo?e=1717632000&v=beta&t=zDaVAoVjiFoRdcSjfqrWpID7by2jUuCQWEVH7noulZY",
+        "name": "Egis",
+        "status": "Freelance",
+        "role": "Développeur ReactJS",
+        "startDate": "2021-03-31",
+        "endDate": "2021-05-31",
+        "highlights": [],
+        "description": "Développement d'un POC pour la ville d'Amsterdam.\nMission d'un mois où j'ai pu découvrir de nouvelles technologies autour de l'univers ReactJS.\n - XState, ZeStand.",
+        "url": "https://www.linkedin.com/company/egis/",
+        "location": " "
+      },
+      {
+        "logo": "https://media.licdn.com/dms/image/C560BAQGtreG9Ph4jCQ/company-logo_200_200/0/1630639409659/log_in_line_logo?e=1717632000&v=beta&t=Eqb2kCaHPbWimVkVUqkA1MfhrzgqG3_hR0Y0FH-4ZDk",
+        "name": "Log'​in Line",
+        "status": "Freelance",
+        "role": "Développeur React Native",
+        "startDate": "2020-07-31",
+        "endDate": "2020-09-30",
+        "highlights": [],
+        "description": "Mission de courte durée où j'ai aidé au développement de l'application Fantasy rugby world.",
+        "url": "https://www.linkedin.com/company/log-in-line/",
+        "location": "Remote"
+      },
+      {
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQHK1L0f2g3SZA/company-logo_200_200/0/1674655319645/dokkigroupe_logo?e=1717632000&v=beta&t=XvLSN_a1aKSTQ8b7ka3AcNRxTq7jw0reGNwWzAQHOg0",
+        "name": "Futur Composé",
+        "status": "Freelance",
+        "role": "Lead Dévelopeur React Native",
+        "startDate": "2020-01-31",
+        "endDate": "2020-05-31",
+        "highlights": [],
+        "description": "J'ai pu travaillé sur le projet Dokki en tant que Lead développeur. J'ai pris en main le projet pendant 5 mois et j'ai eu à la charge de réaliser les choix techniques du lancement de projet. J'ai pu mettre en oeuvre une architecture où le store était réutilisé entre la partie web app et mobile app en TDD.\nJe participais aussi à la mise à niveau des juniors et alternants de l'entreprise. \nRedux, Redux Saga, Jest, Typescript.",
+        "url": "https://www.linkedin.com/company/dokkigroupe/",
+        "location": "Région de Caen, France"
+      },
+      {
+        "name": "FIDME",
+        "status": "Freelance",
+        "role": "Développeur React Native Freelance",
+        "startDate": "2019-03-31",
+        "endDate": "2019-08-31",
+        "highlights": [],
+        "description": "Fidme est une application avec plus d'un million d'utilisateurs, sur laquelle j'ai pu participé à sa refonte en tant que développeur React Native.\nJ'ai aussi travaillé avec les technologies Mobx et Jest.",
+        "url": "https://www.linkedin.com/company/fidme/",
+        "location": "Bordeaux"
+      },
+      {
+        "name": "dotmind",
+        "status": "Freelance",
+        "role": "Développeur ReactJS freelance",
+        "startDate": "2019-02-28",
+        "endDate": "2019-02-28",
+        "highlights": [],
+        "description": "Développement de la FFR TV pour le nouveau site de la fédération Française de rugby en ReactJS.\n    - https://www.ffr.fr/ffr-tv",
+        "url": "https://www.linkedin.com/company/dotmind/",
+        "location": "Région de Bordeaux, France"
+      },
+      {
+        "name": "ACTUM Digital",
+        "role": "Développeur Full Stack",
+        "startDate": "2017-09-30",
+        "endDate": "2017-12-31",
+        "highlights": [],
+        "description": "Mission de 4 mois à l'étranger, première expérience de travail dans un pays autre\nque la France.\nDéveloppement d'une application mobile en React Native pour Regiojet, une\nentreprise ferroviaire de transport de voyageurs en République tchèque et\nSlovaquie. L'application devait lister les tickets en fonction des destinations\nchoisies, permettre à l'utilisateur de sélectionner une place et d'acheter un\nticket. Elle devait intégrer un mécanisme d'internationalisation.\nTechnologies:\n- React Native\n- Redux\n- React Intl\n- Redux Form\n- Redux persist\n- Git/GitFlow\n\nOrganisation d'une conférence sur le thème des animations en React Native:\n- http://y2u.be/jK40958QUT4\nDéveloppement de mockup en ReactJS pour des clients d'Actum",
+        "url": "https://www.linkedin.com/company/actumdigital/",
+        "location": "Prague, République tchèque"
+      },
+      {
+        "name": "Alizarine",
+        "status": "Freelance",
+        "role": "Stagiaire Développement mobile",
+        "startDate": "2017-01-31",
+        "endDate": "2017-04-30",
+        "highlights": [],
+        "description": "Stage en développement mobile où j'ai du créer une application mobile à partir de rien. \nJ'ai acquéris mes premières connaissances en React Native, ES6, Redux et à utiliser le service Firebase en backend.",
+        "url": "",
+        "location": "Région de Bordeaux, France"
+      },
+      {
+        "name": "Centre de loisir de Sartilly",
+        "role": "Animateur en centre de loisir",
+        "startDate": "2016-08-31",
+        "endDate": "2016-08-31",
+        "highlights": [],
+        "description": "Animateur en centre de loisir pendant un mois gérant des 6 à 9 ans.",
+        "url": "",
+        "location": "Sartilly"
+      },
+      {
+        "name": "DALTONER",
+        "role": " Stagiaire Technicien Réseau",
+        "startDate": "2015-05-31",
+        "endDate": "2015-07-31",
+        "highlights": [],
+        "description": "Stagiaire technicien réseau où j'ai pu intervenir chez différents particuliers ou entreprise pour résoudre leur problème informatiques.",
+        "url": "https://www.linkedin.com/company/daltoner/",
+        "location": "Avranches"
+      }
+    ],
+    "volunteer": [],
+    "education": [
+      {
+        "institution": "Exia cesi",
+        "area": "Ingénieur en informatique",
+        "studyType": "Engineer degree",
+        "startDate": "2016-12-31",
+        "endDate": "2019-12-31",
+        "score": "",
+        "courses": []
+      },
+      {
+        "institution": "University of the West of Scotland",
+        "area": "Développement mobile",
+        "studyType": "Semestre Erasmus",
+        "startDate": "2018-12-31",
+        "endDate": "2018-12-31",
+        "score": "",
+        "courses": []
+      },
+      {
+        "institution": "Institut Lemonnier",
+        "area": "Informatique",
+        "studyType": "BTS Sciences numérique de l'informatique et réseau",
+        "startDate": "2014-12-31",
+        "endDate": "2016-12-31",
+        "score": "",
+        "courses": []
+      },
+      {
+        "institution": "Institut saint lô",
+        "area": "Scientifique",
+        "studyType": "Baccalauréat",
+        "startDate": "2011-12-31",
+        "endDate": "2014-12-31",
+        "score": "",
+        "courses": []
+      }
+    ],
+    "awards": [],
+    "certificates": [
+      {
+        "name": "REACTJS QUIZ NIVEAU INTERMÉDIAIRE",
+        "issuer": "SkillValue",
+        "url": "https://skillvalue.com/fr/certificate/9AIzLRV9s5h7nJooa3xFGztZ02aJUKZPyRYJ2ifhEAiI9Xc0vEsNgGRO5xp9"
+      },
+      {
+        "name": "REDUX QUIZZ INTERMEDIAIRE",
+        "issuer": "SkillValue",
+        "url": "https://skillvalue.com/fr/certificate/k52Gou21ame5fG3SqnkVi7hDWh5L4Tvddb6YJy9hbAyKyEPgffJNNuI68olt"
+      }
+    ],
+    "publications": [],
+    "skills": [
+      {
+        "name": "ReactJS",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "TypeScript",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Jest",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Tailwind CSS",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "React.js",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Développement pour Android",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "HTML5",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "React Native ",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "GitHub",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "MySQL",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "PHP",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "firebase",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Java",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "JavaScript",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Android",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "NoSQL",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Feuilles de style en cascade (CSS)",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Flow",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Babel",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Gestion de projet",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "FeatherJS",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "NodeJS",
+        "level": "",
+        "keywords": []
+      }
+    ],
+    "languages": [
+      {
+        "language": "fr",
+        "fluency": "Native Speaker"
+      },
+      {
+        "fluency": "Professional Working",
+        "language": "Anglais"
+      },
+      {
+        "fluency": "Native Speaker",
+        "language": "Français"
+      },
+      {
+        "fluency": "Elementary",
+        "language": "Russe"
+      }
+    ],
+    "interests": [],
+    "references": [],
+    "projects": [],
+    "meta": {
+      "version": "v1.0.0",
+      "canonical": "https://github.com/jsonresume/resume-schema/blob/v1.0.0/schema.json"
+    }
+  }
