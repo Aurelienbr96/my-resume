@@ -17,6 +17,20 @@ const styles = {
   },
 };
 
+const ButtonsMenu = () => (
+  <>
+    <ButtonMenu className="mx-8" to="/about">
+      ABOUT ME
+    </ButtonMenu>
+    <ButtonMenu className="mx-8" to="/experiences">
+      EXPERIENCES
+    </ButtonMenu>
+    <ButtonMenu className="mx-8" to="/contacts">
+      CONTACTS
+    </ButtonMenu>
+  </>
+);
+
 export const Menu = ({
   isOpen,
   handleOnMobileMenuClick,
@@ -29,15 +43,7 @@ export const Menu = ({
   if (!isXs) {
     return (
       <div className="mt-6 text-light-purple">
-        <ButtonMenu className="mx-8" to="/about">
-          ABOUT ME
-        </ButtonMenu>
-        <ButtonMenu className="mx-8" to="/experiences">
-          EXPERIENCES
-        </ButtonMenu>
-        <ButtonMenu className="mx-8" to="/contacts">
-          CONTACTS
-        </ButtonMenu>
+        <ButtonsMenu />
       </div>
     );
   }
@@ -52,15 +58,7 @@ export const Menu = ({
       onClose={handleOnMobileMenuClick}
       isOpen={isOpen}
     >
-      <ButtonMenu className="mx-8" to="/about">
-        ABOUT ME
-      </ButtonMenu>
-      <ButtonMenu className="mx-8" to="/experiences">
-        EXPERIENCES
-      </ButtonMenu>
-      <ButtonMenu className="mx-8" to="/contacts">
-        CONTACTS
-      </ButtonMenu>
+      <ButtonsMenu />
     </MobileMenu>
   );
 };
