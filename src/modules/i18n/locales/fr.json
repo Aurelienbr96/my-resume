@@ -114,41 +114,11 @@
         "role": "Développeur Full Stack",
         "startDate": "2017-09-30",
         "endDate": "2017-12-31",
+        "status": "contract",
         "highlights": [],
         "description": "Mission de 4 mois à l'étranger, première expérience de travail dans un pays autre\nque la France.\nDéveloppement d'une application mobile en React Native pour Regiojet, une\nentreprise ferroviaire de transport de voyageurs en République tchèque et\nSlovaquie. L'application devait lister les tickets en fonction des destinations\nchoisies, permettre à l'utilisateur de sélectionner une place et d'acheter un\nticket. Elle devait intégrer un mécanisme d'internationalisation.\nTechnologies:\n- React Native\n- Redux\n- React Intl\n- Redux Form\n- Redux persist\n- Git/GitFlow\n\nOrganisation d'une conférence sur le thème des animations en React Native:\n- http://y2u.be/jK40958QUT4\nDéveloppement de mockup en ReactJS pour des clients d'Actum",
         "url": "https://www.linkedin.com/company/actumdigital/",
         "location": "Prague, République tchèque"
-      },
-      {
-        "name": "Alizarine",
-        "status": "Freelance",
-        "role": "Stagiaire Développement mobile",
-        "startDate": "2017-01-31",
-        "endDate": "2017-04-30",
-        "highlights": [],
-        "description": "Stage en développement mobile où j'ai du créer une application mobile à partir de rien. \nJ'ai acquéris mes premières connaissances en React Native, ES6, Redux et à utiliser le service Firebase en backend.",
-        "url": "",
-        "location": "Région de Bordeaux, France"
-      },
-      {
-        "name": "Centre de loisir de Sartilly",
-        "role": "Animateur en centre de loisir",
-        "startDate": "2016-08-31",
-        "endDate": "2016-08-31",
-        "highlights": [],
-        "description": "Animateur en centre de loisir pendant un mois gérant des 6 à 9 ans.",
-        "url": "",
-        "location": "Sartilly"
-      },
-      {
-        "name": "DALTONER",
-        "role": " Stagiaire Technicien Réseau",
-        "startDate": "2015-05-31",
-        "endDate": "2015-07-31",
-        "highlights": [],
-        "description": "Stagiaire technicien réseau où j'ai pu intervenir chez différents particuliers ou entreprise pour résoudre leur problème informatiques.",
-        "url": "https://www.linkedin.com/company/daltoner/",
-        "location": "Avranches"
       }
     ],
     "volunteer": [],
