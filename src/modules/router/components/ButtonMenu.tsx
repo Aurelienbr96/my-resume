@@ -1,7 +1,7 @@
 import classNames from "classnames";
 import { Link } from "react-router-dom";
-import { useRetractableMenu } from "../hooks/useRetractableMenu";
-import { PropsWithChildren } from "react";
+import { PropsWithChildren, useContext } from "react";
+import MenuContext from "../contexts/menuContext";
 
 type Props = {
   to: string;
@@ -14,9 +14,9 @@ export const ButtonMenu = ({
   className,
 }: PropsWithChildren<Props>) => {
   const containerClassName = classNames("hover:underline", className);
-  const { handleMenuRetracted } = useRetractableMenu();
+  const { toggleMenu } = useContext(MenuContext);
   return (
-    <Link to={to} onClick={handleMenuRetracted} className={containerClassName}>
+    <Link to={to} onClick={toggleMenu} className={containerClassName}>
       {children}
     </Link>
   );

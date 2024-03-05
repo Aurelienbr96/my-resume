@@ -45,7 +45,7 @@ export const LanguageSwitch = ({ className, languages }: Props) => {
     i18n.changeLanguage(key);
   };
 
-  const containerClassName = classNames('relative', className);
+  const containerClassName = classNames('ml-8 md:ml-0 mt-6 md:mt-0 relative', className);
 
   return (
     <div ref={ref} className={containerClassName}>
@@ -55,10 +55,10 @@ export const LanguageSwitch = ({ className, languages }: Props) => {
         onClick={handleOnClick}
       >
         {renderCurrentFlag()}
-        <SelectArrows className="ml-[5px]" isOpen={toggle} />
+        <SelectArrows className="ml-[5px] fill-white md:fill-black" isOpen={toggle} />
       </button>
       {toggle && (
-        <div className="absolute top-6 right-[-2px] z-10 shadow-table flex-col">
+        <div className="absolute top-6 left-[-15px] md:left-[-12px] z-10 shadow-table flex-col">
           {languages.map(
             ({ Flag, key }) =>
               key !== i18n.language && (

@@ -4,6 +4,10 @@ import { ButtonMenu } from "./ButtonMenu";
 import { LanguageSwitch } from "../../i18n/components/LanguageSwitch";
 import { supportedLanguages } from "../../i18n/constants/supportedLanguages";
 import { useTranslation } from "react-i18next";
+import classNames from "classnames";
+import { useContext, useRef } from "react";
+import { useOnClickOutside } from "../../common/hooks/useOnClickOutside";
+import MenuContext from "../contexts/menuContext";
 
 const styles = {
   bmBurgerButton: {
@@ -22,15 +26,18 @@ const styles = {
 
 const ButtonsMenu = () => {
   const { t } = useTranslation();
+
+  const buttonClassName = classNames("mx-8 mt-6 md:mt-0");
+
   return (
     <>
-      <ButtonMenu className="mx-8" to="/about">
+      <ButtonMenu className={buttonClassName} to="/about">
         {t("menu.about").toUpperCase()}
       </ButtonMenu>
-      <ButtonMenu className="mx-8" to="/experiences">
+      <ButtonMenu className={buttonClassName} to="/experiences">
         {t("menu.experiences").toUpperCase()}
       </ButtonMenu>
-      <ButtonMenu className="mx-8" to="/contacts">
+      <ButtonMenu className={buttonClassName} to="/contacts">
         {t("menu.contact").toUpperCase()}
       </ButtonMenu>
       <LanguageSwitch languages={supportedLanguages} />
@@ -46,6 +53,9 @@ export const Menu = ({
   handleOnMobileMenuClick: (() => void) | undefined;
 }) => {
   const { isXs } = useBreakpoints();
+  const { closeMenu } = useContext(MenuContext);
+  const ref = useRef(null);
+  useOnClickOutside(ref, closeMenu);
 
   if (!isXs) {
     return (
@@ -56,16 +66,18 @@ export const Menu = ({
   }
 
   return (
-    <MobileMenu
-      right
-      styles={styles}
-      outerContainerId={"outer-container"}
-      pageWrapId={"page-wrap"}
-      className="bg-black text-light-purple"
-      onClose={handleOnMobileMenuClick}
-      isOpen={isOpen}
-    >
-      <ButtonsMenu />
-    </MobileMenu>
+    <div ref={ref}>
+      <MobileMenu
+        right
+        styles={styles}
+        outerContainerId={"outer-container"}
+        pageWrapId={"page-wrap"}
+        className="bg-light-purple text-white"
+        onClose={handleOnMobileMenuClick}
+        isOpen={isOpen}
+      >
+        <ButtonsMenu />
+      </MobileMenu>
+    </div>
   );
 };

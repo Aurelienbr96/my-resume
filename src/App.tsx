@@ -7,6 +7,7 @@ import "./modules/i18n/setup";
 import dayjs from "dayjs";
 import advancedFormat from "dayjs/plugin/advancedFormat";
 import customParseFormat from "dayjs/plugin/customParseFormat";
+import { MenuProvider } from "./modules/router/contexts/menuContext";
 
 dayjs.extend(customParseFormat);
 dayjs.extend(advancedFormat);
@@ -15,9 +16,11 @@ const queryClient = new QueryClient();
 
 function App() {
   return (
-    <QueryClientProvider client={queryClient}>
-      <RouterProvider router={router} />
-    </QueryClientProvider>
+    <MenuProvider>
+      <QueryClientProvider client={queryClient}>
+        <RouterProvider router={router} />
+      </QueryClientProvider>
+    </MenuProvider>
   );
 }
 
