@@ -2,20 +2,21 @@ import { GiHamburgerMenu } from "react-icons/gi";
 
 import { Outlet } from "react-router-dom";
 
-import { useRetractableMenu } from "../hooks/useRetractableMenu";
 import { ButtonMenu } from "./ButtonMenu";
 import { Menu } from "./Menu";
 import useBreakpoints from "../../common/hooks/useBreakPoints";
+import { useContext } from "react";
+import MenuContext from "../contexts/menuContext";
 
 export const Layout = () => {
-  const { isMenuRetracted, handleMenuRetracted } = useRetractableMenu();
+  const { isMenuOpen, toggleMenu } = useContext(MenuContext);
   const { isXs } = useBreakpoints();
 
   return (
     <div id="outer-container" className="flex flex-col px-6">
       <div className="flex justify-around">
         {isXs && (
-          <button onClick={handleMenuRetracted}>
+          <button onClick={toggleMenu}>
             <GiHamburgerMenu />
           </button>
         )}
@@ -23,10 +24,7 @@ export const Layout = () => {
         <ButtonMenu className="text-3xl text-light-purple mt-4" to="/">
           Aurelien Brachet
         </ButtonMenu>
-        <Menu
-          isOpen={isMenuRetracted}
-          handleOnMobileMenuClick={handleMenuRetracted}
-        />
+        <Menu isOpen={isMenuOpen} handleOnMobileMenuClick={toggleMenu} />
       </div>
       <div id="page-wrap">
         <div id="details" className="mt-6">
