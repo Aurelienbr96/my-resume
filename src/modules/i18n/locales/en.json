@@ -5,6 +5,11 @@
         "experiences": "experiences",
         "contact": "contact"
     },
+    "contactPage": {
+      "title": "Contact me",
+      "submit": "Submit",
+      "success": "Your message was successfully sent"
+    },
     "basics": {
       "name": "Aurélien Brachet",
       "label": "React Native/ReactJS developer",

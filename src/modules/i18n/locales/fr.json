@@ -5,6 +5,11 @@
         "experiences": "experiences",
         "contact": "contacts"
     },
+    "contactPage": {
+      "title": "Contactez moi",
+      "submit": "Envoyez un message",
+      "success": "Votre message a été correctement envoyé"
+    },
     "basics": {
       "name": "Aurélien Brachet",
       "label": "Recherche d'une mission longue durée en React JS / RN.",

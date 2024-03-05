@@ -446,6 +446,11 @@
   resolved "https://registry.npmjs.org/@effect-ts/system/-/system-0.57.5.tgz"
   integrity sha512-/crHGujo0xnuHIYNc1VgP0HGJGFSoSqq88JFXe6FmFyXPpWt8Xu39LyLg7rchsxfXFeEdA9CrIZvLV5eswXV5g==
 
+"@emailjs/browser@^4.2.0":
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/@emailjs/browser/-/browser-4.2.0.tgz#f260365b31d084c9c14ae8ef0ca8fb1eb817421b"
+  integrity sha512-f1uOhThjn7tBX78rjpnkxEQhtEsMk05ZzU8LuqlJ41pT705fnJ77oMzKYXU3+X75EytlRKseHTLjtsy8oKTMEw==
+
 "@esbuild-plugins/node-resolve@^0.1.4":
   version "0.1.4"
   resolved "https://registry.npmjs.org/@esbuild-plugins/node-resolve/-/node-resolve-0.1.4.tgz"
@@ -5804,6 +5809,11 @@ react-dom@^18.2.0:
   dependencies:
     loose-envify "^1.1.0"
     scheduler "^0.23.0"
+
+react-hook-form@^7.51.0:
+  version "7.51.0"
+  resolved "https://registry.yarnpkg.com/react-hook-form/-/react-hook-form-7.51.0.tgz#757ae71b37c26e00590bd3788508287dcc5ecdaf"
+  integrity sha512-BggOy5j58RdhdMzzRUHGOYhSz1oeylFAv6jUSG86OvCIvlAvS7KvnRY7yoAf2pfEiPN7BesnR0xx73nEk3qIiw==
 
 react-i18next@^14.0.5:
   version "14.0.5"
