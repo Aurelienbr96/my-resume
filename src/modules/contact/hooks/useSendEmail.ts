@@ -1,8 +1,12 @@
 import { useMutation } from "@tanstack/react-query";
-import emailjs from "@emailjs/browser";
+import emailjs, { EmailJSResponseStatus } from "@emailjs/browser";
 import { RefObject } from "react";
+import { TFunction } from "i18next";
 
-export const useSendEmail = (form: RefObject<HTMLFormElement>) => {
+export const useSendEmail = (
+  form: RefObject<HTMLFormElement>,
+  t: TFunction<"translation", undefined>,
+) => {
   const { data, error, ...others } = useMutation({
     mutationFn: () =>
       emailjs.sendForm(
@@ -13,6 +17,12 @@ export const useSendEmail = (form: RefObject<HTMLFormElement>) => {
           publicKey: "79B5tLCbogVG8Kh5q",
         },
       ),
+
+    onError: (e: EmailJSResponseStatus) => {
+      if (e.status === 400) return t("contactPage.error400");
+
+      return t("errors.common");
+    },
   });
   return { data, error, ...others };
 };

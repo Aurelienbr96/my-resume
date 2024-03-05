@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1709657190849" clover="3.2.0">
+  <project timestamp="1709657190849" name="All files">
+    <metrics statements="42" coveredstatements="42" conditionals="12" coveredconditionals="10" methods="10" coveredmethods="7" elements="64" coveredelements="59" complexity="0" loc="42" ncloc="42" packages="4" files="5" classes="5"/>
+    <package name="modules.common.components">
+      <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="Loader.tsx" path="/Users/aurelienbrachet/Desktop/React/myresume/src/modules/common/components/Loader.tsx">
+        <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="11" count="1" type="cond" truecount="0" falsecount="2"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="modules.contact">
+      <metrics statements="23" coveredstatements="23" conditionals="10" coveredconditionals="10" methods="2" coveredmethods="2"/>
+      <file name="ContactPage.tsx" path="/Users/aurelienbrachet/Desktop/React/myresume/src/modules/contact/ContactPage.tsx">
+        <metrics statements="23" coveredstatements="23" conditionals="10" coveredconditionals="10" methods="2" coveredmethods="2"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="22" count="11" type="stmt"/>
+        <line num="23" count="11" type="stmt"/>
+        <line num="24" count="11" type="stmt"/>
+        <line num="29" count="11" type="stmt"/>
+        <line num="33" count="11" type="stmt"/>
+        <line num="34" count="11" type="stmt"/>
+        <line num="36" count="11" type="stmt"/>
+        <line num="40" count="11" type="stmt"/>
+        <line num="44" count="11" type="stmt"/>
+        <line num="48" count="11" type="stmt"/>
+        <line num="55" count="11" type="stmt"/>
+      </file>
+    </package>
+    <package name="modules.contact.validationSchemas">
+      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="contactSchema.ts" path="/Users/aurelienbrachet/Desktop/React/myresume/src/modules/contact/validationSchemas/contactSchema.ts">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="testing">
+      <metrics statements="10" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="4"/>
+      <file name="index.tsx" path="/Users/aurelienbrachet/Desktop/React/myresume/src/testing/index.tsx">
+        <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="8" type="stmt"/>
+        <line num="8" count="8" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+      </file>
+      <file name="setupDomTest.ts" path="/Users/aurelienbrachet/Desktop/React/myresume/src/testing/setupDomTest.ts">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="3"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="5" count="32" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>

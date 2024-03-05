@@ -2,6 +2,7 @@ import { useTranslation } from "react-i18next";
 import { useForm } from "react-hook-form";
 import { useRef } from "react";
 import { useSendEmail } from "./hooks/useSendEmail";
+import { yupResolver } from "@hookform/resolvers/yup";
 import classNames from "classnames";
 import { Loader } from "../common/components/Loader";
 
@@ -9,6 +10,7 @@ import { Alert } from "flowbite-react";
 
 import useBreakpoints from "../common/hooks/useBreakPoints";
 import { ErrorComp } from "../common/components/ErrorComp";
+import { contactSchema } from "./validationSchemas/contactSchema";
 
 type FormData = {
   message: string;
@@ -24,9 +26,11 @@ export const ContactPage = () => {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm<FormData>();
+  } = useForm<FormData>({
+    resolver: yupResolver(contactSchema),
+  });
 
-  const { mutate, isPending, isSuccess } = useSendEmail(form);
+  const { mutate, isPending, isSuccess, error } = useSendEmail(form, t);
   const onSubmit = () => mutate();
 
   const inputClassName = classNames(
@@ -65,29 +69,33 @@ export const ContactPage = () => {
         <input
           placeholder="email"
           className={inputClassName}
-          {...(register("email"), { required: true })}
+          {...register("email")}
         />
-        {errors.email && <ErrorComp />}
+        {errors.email && <ErrorComp>{errors.email.message}</ErrorComp>}
         <textarea
           className={textareaClassName}
           placeholder="message"
-          {...register("message", { required: true })}
+          {...register("message")}
         />
-        {errors.message && <ErrorComp />}
+        {errors.message && <ErrorComp>{errors.message.message}</ErrorComp>}
         {isSuccess && (
-          <Alert
-            color="success"
-            className="mt-6"
-          >
+          <Alert color="success" className="mt-6">
             {t("contactPage.success")}
           </Alert>
         )}
+
+        {error && (
+          <Alert color="failure" className="mt-6">
+            {error.text}
+          </Alert>
+        )}
         <button
+          role="button"
           className={submitInputClassName}
           onClick={handleSubmit(onSubmit)}
         >
           {isPending ? (
-            <Loader height={20} width={20} />
+            <Loader height={20} width={20} dataTestId="contact-page-loader" />
           ) : (
             t("contactPage.submit")
           )}

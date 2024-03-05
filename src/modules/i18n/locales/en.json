@@ -5,10 +5,14 @@
         "experiences": "experiences",
         "contact": "contact"
     },
+    "errors": {
+      "common": "An error occurred, please try again"
+    },
     "contactPage": {
       "title": "Contact me",
       "submit": "Submit",
-      "success": "Your message was successfully sent"
+      "success": "Your message was successfully sent",
+      "error400": "An error occurred, please contact the developer at aurelienbrachet123@gmail.com"
     },
     "basics": {
       "name": "Aurélien Brachet",
