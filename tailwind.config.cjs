@@ -11,6 +11,8 @@ export default {
         "light-purple": "#5C5C83",
         "light-grey": "#F2F5F7",
         "strong-purple": "#545790",
+        'color-medium-light': '#E9E9E9',
+        "error": "#C81E1D"
       },
     },
   },

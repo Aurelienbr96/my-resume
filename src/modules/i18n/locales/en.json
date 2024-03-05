@@ -5,6 +5,15 @@
         "experiences": "experiences",
         "contact": "contact"
     },
+    "errors": {
+      "common": "An error occurred, please try again"
+    },
+    "contactPage": {
+      "title": "Contact me",
+      "submit": "Submit",
+      "success": "Your message was successfully sent",
+      "error400": "An error occurred, please contact the developer at aurelienbrachet123@gmail.com"
+    },
     "basics": {
       "name": "Aurélien Brachet",
       "label": "React Native/ReactJS developer",
@@ -70,12 +79,45 @@
       {
         "logo": "https://media.licdn.com/dms/image/C4E0BAQHK1L0f2g3SZA/company-logo_200_200/0/1674655319645/dokkigroupe_logo?e=1717632000&v=beta&t=XvLSN_a1aKSTQ8b7ka3AcNRxTq7jw0reGNwWzAQHOg0",
         "role": "Lead React Native developer",
-        "name": "Dokki",
+        "name": "Futur composé",
         "status": "Freelance",
         "startDate": "2020-01-01",
         "endDate": "2020-05-31",
         "location": "remote - Caen",
         "description": "I was working on the Dokki application (https://apps.apple.com/tt/app/dokki-learn-play/id1524772965?ign-mpt=uo%3D2) as lead developer. I took charge of the project for 5 months and I was responsible for making the technical choices for the project. I implemented an architecture where the store was reused between the web app and mobile app part in TDD. I also participated in the formation of juniors and work-study students in the company. Redux, Redux Saga, Jest, Typescript."
+      },
+      {
+        "name": "FIDME",
+        "status": "Freelance",
+        "role": "Développeur React Native Freelance",
+        "startDate": "2019-03-31",
+        "endDate": "2019-08-31",
+        "highlights": [],
+        "description": "Fidme est une application avec plus d'un million d'utilisateurs, sur laquelle j'ai pu participé à sa refonte en tant que développeur React Native.\nJ'ai aussi travaillé avec les technologies Mobx et Jest.",
+        "url": "https://www.linkedin.com/company/fidme/",
+        "location": "Bordeaux"
+      },
+      {
+        "name": "dotmind",
+        "status": "Freelance",
+        "role": "Développeur ReactJS freelance",
+        "startDate": "2019-02-28",
+        "endDate": "2019-02-28",
+        "highlights": [],
+        "description": "Développement de la FFR TV pour le nouveau site de la fédération Française de rugby en ReactJS.\n    - https://www.ffr.fr/ffr-tv",
+        "url": "https://www.linkedin.com/company/dotmind/",
+        "location": "Région de Bordeaux, France"
+      },
+      {
+        "name": "ACTUM Digital",
+        "role": "Développeur Full Stack",
+        "startDate": "2017-09-30",
+        "endDate": "2017-12-31",
+        "status": "contract",
+        "highlights": [],
+        "description": "Mission de 4 mois à l'étranger, première expérience de travail dans un pays autre\nque la France.\nDéveloppement d'une application mobile en React Native pour Regiojet, une\nentreprise ferroviaire de transport de voyageurs en République tchèque et\nSlovaquie. L'application devait lister les tickets en fonction des destinations\nchoisies, permettre à l'utilisateur de sélectionner une place et d'acheter un\nticket. Elle devait intégrer un mécanisme d'internationalisation.\nTechnologies:\n- React Native\n- Redux\n- React Intl\n- Redux Form\n- Redux persist\n- Git/GitFlow\n\nOrganisation d'une conférence sur le thème des animations en React Native:\n- http://y2u.be/jK40958QUT4\nDéveloppement de mockup en ReactJS pour des clients d'Actum",
+        "url": "https://www.linkedin.com/company/actumdigital/",
+        "location": "Prague, République tchèque"
       }
     ],
     "volunteer": [],

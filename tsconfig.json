@@ -19,6 +19,7 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
+    "types": ["jest", "node", "@testing-library/jest-dom"],
 
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
