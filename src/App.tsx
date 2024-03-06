@@ -16,11 +16,13 @@ const queryClient = new QueryClient();
 
 function App() {
   return (
-    <MenuProvider>
-      <QueryClientProvider client={queryClient}>
-        <RouterProvider router={router} />
-      </QueryClientProvider>
-    </MenuProvider>
+    <div className="font-montserrat">
+      <MenuProvider>
+        <QueryClientProvider client={queryClient}>
+          <RouterProvider router={router} />
+        </QueryClientProvider>
+      </MenuProvider>
+    </div>
   );
 }
 

@@ -20,7 +20,7 @@
       "image": "",
       "email": "aurelienbrachet123@gmail.com",
       "phone": "",
-      "introduction": "Bonjour je m'appelle Aurélien, développeur ReactJS / React Native.",
+      "introduction": "Bonjour, je m'appelle Aurélien. Développeur senior en ReactJS et React Native. Je développe des applications utilisant ces technologies depuis 2017. J'ai une connaissance approfondie de ces bibliothèques/frameworks, je peux vous aider à construire l'application dont votre entreprise a besoin.",
       "url": "",
       "summary": "Bonjour,\nspécialisé en Javascript et tout spécialement en ReactJS et React Native depuis 2017, je suis à la recherche d'une mission en freelance dans ces technologies.\n\nMa formation m'a aussi permis d'avoir acquis d'autres compétences en développement dans des technologies assez varié, BDD (MySQL, NoSQL), Backend (nodeJS, FeatherJS) aussi en gestion de projet.\n\nJ'ai eu la chance de pouvoir travailler dans des structures très variés allant d'une startup à de grands groupes, en France et à l'étranger, ce qui me permet d'être très polyvalent dans mon travail.",
       "location": {
@@ -46,7 +46,8 @@
         "highlights": [],
         "description": "En tant que développeur principal spécialisé en React JS et React Native, j'ai dirigé la refonte intégrale du site web interne de Prium Portage, lequel souffrait d'une accumulation significative de dette technique. J'ai procédé à la sélection et dispensé des recommandations quant à la stack technique à adopter, incluant React Hook Form, Tailwind, Vite, Axios, XState, entre autres. J'ai établi une architecture scalable, avec tests unitaires, tout en assurant l'implémentation des interfaces utilisateur conçues par l'équipe de design UI/UX.\n\nJ'ai aussi travaillé au développement from scratch de l'application mobile Prium one.",
         "url": "https://www.linkedin.com/company/prium-solutions/",
-        "location": "Remote"
+        "location": "Remote",
+        "skills": ["JavaScript", "ReactJS", "React Native", "TypeScript", "Storybook", "Jest", "Cypress", "Fastlane", "React Query"]
       },
       {
         "logo": "https://media.licdn.com/dms/image/C4E0BAQF0PeCwqftXBw/company-logo_200_200/0/1651594527767/folkhq_logo?e=1717632000&v=beta&t=3ZribKFEn75uxsu4z3duF1NrdFAOCGFhYvltrHtumXw",
@@ -58,7 +59,8 @@
         "highlights": [],
         "description": "Mission de courte durée où j'ai travaillé sur l'augmentation du test coverage de l'application (Jest & react-testing-library)",
         "url": "https://www.linkedin.com/company/folkhq/",
-        "location": "Remote"
+        "location": "Remote",
+        "skills": ["JavaScript", "ReactJS", "TypeScript"]
       },
       {
         "logo": "https://media.licdn.com/dms/image/D4E0BAQEAd0aSequAmQ/company-logo_200_200/0/1666266859617/egis_logo?e=1717632000&v=beta&t=zDaVAoVjiFoRdcSjfqrWpID7by2jUuCQWEVH7noulZY",
@@ -70,7 +72,8 @@
         "highlights": [],
         "description": "Développement d'un POC pour la ville d'Amsterdam.\nMission d'un mois où j'ai pu découvrir de nouvelles technologies autour de l'univers ReactJS.\n - XState, ZeStand.",
         "url": "https://www.linkedin.com/company/egis/",
-        "location": " "
+        "location": "Remote",
+        "skills": ["JavaScript", "ReactJS", "TypeScript"]
       },
       {
         "logo": "https://media.licdn.com/dms/image/C560BAQGtreG9Ph4jCQ/company-logo_200_200/0/1630639409659/log_in_line_logo?e=1717632000&v=beta&t=Eqb2kCaHPbWimVkVUqkA1MfhrzgqG3_hR0Y0FH-4ZDk",
@@ -82,7 +85,8 @@
         "highlights": [],
         "description": "Mission de courte durée où j'ai aidé au développement de l'application Fantasy rugby world.",
         "url": "https://www.linkedin.com/company/log-in-line/",
-        "location": "Remote"
+        "location": "Remote",
+        "skills": ["React Native", "Typescript", "Jest"]
       },
       {
         "logo": "https://media.licdn.com/dms/image/C4E0BAQHK1L0f2g3SZA/company-logo_200_200/0/1674655319645/dokkigroupe_logo?e=1717632000&v=beta&t=XvLSN_a1aKSTQ8b7ka3AcNRxTq7jw0reGNwWzAQHOg0",
@@ -94,7 +98,8 @@
         "highlights": [],
         "description": "J'ai pu travaillé sur le projet Dokki en tant que Lead développeur. J'ai pris en main le projet pendant 5 mois et j'ai eu à la charge de réaliser les choix techniques du lancement de projet. J'ai pu mettre en oeuvre une architecture où le store était réutilisé entre la partie web app et mobile app en TDD.\nJe participais aussi à la mise à niveau des juniors et alternants de l'entreprise. \nRedux, Redux Saga, Jest, Typescript.",
         "url": "https://www.linkedin.com/company/dokkigroupe/",
-        "location": "Région de Caen, France"
+        "location": "Région de Caen, France",
+        "skills": ["React Native", "Typescript", "Jest", "Fastlane", "Redux"]
       },
       {
         "name": "FIDME",
@@ -105,7 +110,8 @@
         "highlights": [],
         "description": "Fidme est une application avec plus d'un million d'utilisateurs, sur laquelle j'ai pu participé à sa refonte en tant que développeur React Native.\nJ'ai aussi travaillé avec les technologies Mobx et Jest.",
         "url": "https://www.linkedin.com/company/fidme/",
-        "location": "Bordeaux"
+        "location": "Bordeaux",
+        "skills": ["React Native", "Typescript", "Jest", "Fastlane", "ZeStand"]
       },
       {
         "name": "dotmind",
@@ -116,7 +122,8 @@
         "highlights": [],
         "description": "Développement de la FFR TV pour le nouveau site de la fédération Française de rugby en ReactJS.\n    - https://www.ffr.fr/ffr-tv",
         "url": "https://www.linkedin.com/company/dotmind/",
-        "location": "Région de Bordeaux, France"
+        "location": "Région de Bordeaux, France",
+        "skills": ["ReactJS", "Typescript", "Jest", "Youtube API", "Redux"]
       },
       {
         "name": "ACTUM Digital",
@@ -127,7 +134,8 @@
         "highlights": [],
         "description": "Mission de 4 mois à l'étranger, première expérience de travail dans un pays autre\nque la France.\nDéveloppement d'une application mobile en React Native pour Regiojet, une\nentreprise ferroviaire de transport de voyageurs en République tchèque et\nSlovaquie. L'application devait lister les tickets en fonction des destinations\nchoisies, permettre à l'utilisateur de sélectionner une place et d'acheter un\nticket. Elle devait intégrer un mécanisme d'internationalisation.\nTechnologies:\n- React Native\n- Redux\n- React Intl\n- Redux Form\n- Redux persist\n- Git/GitFlow\n\nOrganisation d'une conférence sur le thème des animations en React Native:\n- http://y2u.be/jK40958QUT4\nDéveloppement de mockup en ReactJS pour des clients d'Actum",
         "url": "https://www.linkedin.com/company/actumdigital/",
-        "location": "Prague, République tchèque"
+        "location": "Prague, République tchèque",
+        "skills": ["React Native", "Typescript"]
       }
     ],
     "volunteer": [],

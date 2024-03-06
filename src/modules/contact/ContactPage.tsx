@@ -11,6 +11,7 @@ import { Alert } from "flowbite-react";
 import useBreakpoints from "../common/hooks/useBreakPoints";
 import { ErrorComp } from "../common/components/ErrorComp";
 import { contactSchema } from "./validationSchemas/contactSchema";
+import { SocialNetworks } from "./components/SocialNetworks";
 
 type FormData = {
   message: string;
@@ -101,6 +102,7 @@ export const ContactPage = () => {
           )}
         </button>
       </form>
+      <SocialNetworks />
     </div>
   );
 };

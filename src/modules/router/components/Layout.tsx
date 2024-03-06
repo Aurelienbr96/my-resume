@@ -9,7 +9,7 @@ import { useContext } from "react";
 import MenuContext from "../contexts/menuContext";
 
 export const Layout = () => {
-  const { isMenuOpen, toggleMenu } = useContext(MenuContext);
+  const { toggleMenu } = useContext(MenuContext);
   const { isXs } = useBreakpoints();
 
   return (
@@ -21,10 +21,10 @@ export const Layout = () => {
           </button>
         )}
 
-        <ButtonMenu className="text-3xl text-light-purple mt-4" to="/">
+        <ButtonMenu className="text-3xl flex-1 text-center text-light-purple mt-4" to="/">
           Aurelien Brachet
         </ButtonMenu>
-        <Menu isOpen={isMenuOpen} handleOnMobileMenuClick={toggleMenu} />
+        <Menu />
       </div>
       <div id="page-wrap">
         <div id="details" className="mt-6">

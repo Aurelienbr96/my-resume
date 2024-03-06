@@ -1,8 +1,10 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import { fireEvent, render, screen, waitFor } from "../../../testing";
 import { ContactPage } from "../ContactPage";
 import { useSendEmail } from "../hooks/useSendEmail";
-import { requiredMessage, wrongEmailFormatMessage } from "../validationSchemas/contactSchema";
+import {
+  requiredMessage,
+  wrongEmailFormatMessage,
+} from "../validationSchemas/contactSchema";
 
 const returnMock = {
   mutate: jest.fn(() => {}),
@@ -14,13 +16,6 @@ jest.mock("../hooks/useSendEmail", () => ({
   useSendEmail: jest.fn(() => {
     return returnMock;
   }),
-}));
-
-jest.mock("react-i18next", (): any => ({
-  useTranslation: (): any => ({
-    t: (key: string): string => key,
-  }),
-  Trans: ({ children }: { children: any }) => children,
 }));
 
 describe("ContactPage", () => {
@@ -82,9 +77,7 @@ describe("ContactPage", () => {
     fireEvent.click(button);
     await waitFor(() =>
       expect(
-        expect(
-          screen.getByText(wrongEmailFormatMessage),
-        ).toBeInTheDocument(),
+        expect(screen.getByText(wrongEmailFormatMessage)).toBeInTheDocument(),
       ),
     );
   });
@@ -98,9 +91,7 @@ describe("ContactPage", () => {
     const button = screen.getByRole("button");
     fireEvent.click(button);
     await waitFor(() =>
-      expect(
-        expect(screen.getAllByText(requiredMessage).length).toBe(2),
-      ),
+      expect(expect(screen.getAllByText(requiredMessage).length).toBe(2)),
     );
   });
 

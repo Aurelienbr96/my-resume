@@ -18,7 +18,7 @@
       "name": "Aurélien Brachet",
       "label": "React Native/ReactJS developer",
       "image": "",
-      "introduction": "Hi, I am Aurelien, a senior ReactJS developer",
+      "introduction": "Hi, I am Aurelien, a senior ReactJS and React Native developer. I have been developing apps using those technologies since 2017, and with extensive knowledge of those libraries/frameworks, I can help you build the application your business needs. ",
       "email": "aurelienbrachet123@gmail.com",
       "phone": "",
       "url": "",
@@ -44,7 +44,8 @@
         "startDate": "2021-07-01",
         "endDate": "2023-09-31",
         "location": "remote",
-        "description": "As a Lead Developer specializing in React JS and React Native, I led the complete overhaul of Prium Portage's internal website, which was burdened by a significant accumulation of technical debt. I conducted the selection process and provided recommendations regarding the technical stack to be adopted, including React Hook Form, Tailwind, Vite, Axios, XState, among others. I established a scalable architecture with unit tests while ensuring the implementation of user interfaces designed by the UI/UX design team. Additionally, I worked on the development from scratch of the Prium One mobile application."
+        "description": "As a Lead Developer specializing in React JS and React Native, I led the complete overhaul of Prium Portage's internal website, which was burdened by a significant accumulation of technical debt. I conducted the selection process and provided recommendations regarding the technical stack to be adopted, including React Hook Form, Tailwind, Vite, Axios, XState, among others. I established a scalable architecture with unit tests while ensuring the implementation of user interfaces designed by the UI/UX design team. Additionally, I worked on the development from scratch of the Prium One mobile application.",
+        "skills": ["JavaScript", "ReactJS", "React Native", "TypeScript", "Storybook", "Jest", "Cypress", "Fastlane", "React Query"]
       },
       {
         "logo": "https://media.licdn.com/dms/image/C4E0BAQF0PeCwqftXBw/company-logo_200_200/0/1651594527767/folkhq_logo?e=1717632000&v=beta&t=3ZribKFEn75uxsu4z3duF1NrdFAOCGFhYvltrHtumXw",
@@ -54,7 +55,8 @@
         "startDate": "2021-05-01",
         "endDate": "2021-06-31",
         "location": "remote",
-        "description": "One month mission where I was helping to improve the test coverage of the application (Jest & react-testing-library)"
+        "description": "One month mission where I was helping to improve the test coverage of the application (Jest & react-testing-library)",
+        "skills": ["JavaScript", "ReactJS", "GraphQL", "TypeScript", "Jest"]
       },
       {
         "logo": "https://media.licdn.com/dms/image/D4E0BAQEAd0aSequAmQ/company-logo_200_200/0/1666266859617/egis_logo?e=1717632000&v=beta&t=zDaVAoVjiFoRdcSjfqrWpID7by2jUuCQWEVH7noulZY",
@@ -64,7 +66,8 @@
         "startDate": "2021-03-01",
         "endDate": "2021-05-31",
         "location": "remote",
-        "description": "Development of a POC for the city of Amsterdam. This was a full remote month project where I have had the opportunity to discover new technologies of the ReactJS ecosystem: - XState, - ZeStand."
+        "description": "Development of a POC for the city of Amsterdam. This was a full remote month project where I have had the opportunity to discover new technologies of the ReactJS ecosystem: - XState, - ZeStand.",
+        "skills": ["JavaScript", "ReactJS", "TypeScript"]
       },
       {
         "logo": "https://media.licdn.com/dms/image/C560BAQGtreG9Ph4jCQ/company-logo_200_200/0/1630639409659/log_in_line_logo?e=1717632000&v=beta&t=Eqb2kCaHPbWimVkVUqkA1MfhrzgqG3_hR0Y0FH-4ZDk",
@@ -74,7 +77,8 @@
         "startDate": "2020-07-01",
         "endDate": "2020-09-31",
         "location": "remote - Bordeaux",
-        "description": "Short-term mission where I assisted in the development of the Fantasy Rugby World application"
+        "description": "Short-term mission where I assisted in the development of the Fantasy Rugby World application",
+        "skills": ["React Native", "Typescript", "Jest"]
       },
       {
         "logo": "https://media.licdn.com/dms/image/C4E0BAQHK1L0f2g3SZA/company-logo_200_200/0/1674655319645/dokkigroupe_logo?e=1717632000&v=beta&t=XvLSN_a1aKSTQ8b7ka3AcNRxTq7jw0reGNwWzAQHOg0",
@@ -84,7 +88,8 @@
         "startDate": "2020-01-01",
         "endDate": "2020-05-31",
         "location": "remote - Caen",
-        "description": "I was working on the Dokki application (https://apps.apple.com/tt/app/dokki-learn-play/id1524772965?ign-mpt=uo%3D2) as lead developer. I took charge of the project for 5 months and I was responsible for making the technical choices for the project. I implemented an architecture where the store was reused between the web app and mobile app part in TDD. I also participated in the formation of juniors and work-study students in the company. Redux, Redux Saga, Jest, Typescript."
+        "description": "I was working on the Dokki application (https://apps.apple.com/tt/app/dokki-learn-play/id1524772965?ign-mpt=uo%3D2) as lead developer. I took charge of the project for 5 months and I was responsible for making the technical choices for the project. I implemented an architecture where the store was reused between the web app and mobile app part in TDD. I also participated in the formation of juniors and work-study students in the company. Redux, Redux Saga, Jest, Typescript.",
+        "skills": ["React Native", "Typescript", "Jest", "Fastlane", "Redux"]
       },
       {
         "name": "FIDME",
@@ -95,7 +100,8 @@
         "highlights": [],
         "description": "Fidme est une application avec plus d'un million d'utilisateurs, sur laquelle j'ai pu participé à sa refonte en tant que développeur React Native.\nJ'ai aussi travaillé avec les technologies Mobx et Jest.",
         "url": "https://www.linkedin.com/company/fidme/",
-        "location": "Bordeaux"
+        "location": "Bordeaux",
+        "skills": ["React Native", "Typescript", "Jest", "Fastlane", "ZeStand"]
       },
       {
         "name": "dotmind",
@@ -106,7 +112,8 @@
         "highlights": [],
         "description": "Développement de la FFR TV pour le nouveau site de la fédération Française de rugby en ReactJS.\n    - https://www.ffr.fr/ffr-tv",
         "url": "https://www.linkedin.com/company/dotmind/",
-        "location": "Région de Bordeaux, France"
+        "location": "Région de Bordeaux, France",
+        "skills": ["ReactJS", "Typescript", "Jest", "Youtube API", "Redux"]
       },
       {
         "name": "ACTUM Digital",
@@ -117,7 +124,8 @@
         "highlights": [],
         "description": "Mission de 4 mois à l'étranger, première expérience de travail dans un pays autre\nque la France.\nDéveloppement d'une application mobile en React Native pour Regiojet, une\nentreprise ferroviaire de transport de voyageurs en République tchèque et\nSlovaquie. L'application devait lister les tickets en fonction des destinations\nchoisies, permettre à l'utilisateur de sélectionner une place et d'acheter un\nticket. Elle devait intégrer un mécanisme d'internationalisation.\nTechnologies:\n- React Native\n- Redux\n- React Intl\n- Redux Form\n- Redux persist\n- Git/GitFlow\n\nOrganisation d'une conférence sur le thème des animations en React Native:\n- http://y2u.be/jK40958QUT4\nDéveloppement de mockup en ReactJS pour des clients d'Actum",
         "url": "https://www.linkedin.com/company/actumdigital/",
-        "location": "Prague, République tchèque"
+        "location": "Prague, République tchèque",
+        "skills": ["React Native", "Typescript"]
       }
     ],
     "volunteer": [],
