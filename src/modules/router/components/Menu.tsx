@@ -31,9 +31,6 @@ const ButtonsMenu = () => {
 
   return (
     <>
-      <ButtonMenu className={buttonClassName} to="/about">
-        {t("menu.about").toUpperCase()}
-      </ButtonMenu>
       <ButtonMenu className={buttonClassName} to="/experiences">
         {t("menu.experiences").toUpperCase()}
       </ButtonMenu>
@@ -45,36 +42,34 @@ const ButtonsMenu = () => {
   );
 };
 
-export const Menu = ({
-  isOpen,
-  handleOnMobileMenuClick,
-}: {
-  isOpen: boolean;
-  handleOnMobileMenuClick: (() => void) | undefined;
-}) => {
+export const Menu = () => {
   const { isXs } = useBreakpoints();
-  const { closeMenu } = useContext(MenuContext);
+
+  const { closeMenu, toggleMenu, isMenuOpen } = useContext(MenuContext);
   const ref = useRef(null);
   useOnClickOutside(ref, closeMenu);
 
   if (!isXs) {
     return (
-      <div className="mt-6 flex items-center text-light-purple">
+      <div
+        data-testid="desktop-menu-container"
+        className="mt-6 flex flex-1  justify-center items-center text-light-purple"
+      >
         <ButtonsMenu />
       </div>
     );
   }
 
   return (
-    <div ref={ref}>
+    <div data-testid="mobile-menu-container" ref={ref}>
       <MobileMenu
         right
         styles={styles}
         outerContainerId={"outer-container"}
         pageWrapId={"page-wrap"}
         className="bg-light-purple text-white"
-        onClose={handleOnMobileMenuClick}
-        isOpen={isOpen}
+        onClose={toggleMenu}
+        isOpen={isMenuOpen}
       >
         <ButtonsMenu />
       </MobileMenu>
