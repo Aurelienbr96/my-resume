@@ -31,7 +31,7 @@ export const HomePage = () => {
       <div className="flex flex-1 flex-col pt-6 justify-between items-center">
         {activeAnimation >= 0 && (
           <AnimatedComponent
-            animationClass="animate-fade-in-left"
+            animationClass="animate-fade-in-left bg-white p-6 shadow-lg rounded-lg"
             onAnimationEnd={handleAnimationEnd}
           >
             <p className={textClassName}>{t("basics.introduction")}</p>

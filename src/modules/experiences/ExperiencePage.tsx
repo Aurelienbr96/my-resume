@@ -67,13 +67,13 @@ export const ExperiencePage = () => {
       <Timeline className="mt-6">
         {filteredData.map((work, index) => (
           <TimelineItem
-            className={`p-4 hover:cursor-pointer ${index <= activeIndex ? "animate-fade-in" : ""} ${index > activeIndex ? "hidden" : ""}`}
+            className={`p-4 hover:cursor-pointer bg-white shadow-lg rounded-lg ${index <= activeIndex ? "animate-fade-in" : ""} ${index > activeIndex ? "hidden" : ""}`}
             onMouseEnter={() => setHoveredIndex(index)}
             onMouseLeave={() => setHoveredIndex(-1)}
             onClick={handleOnNavigateLink(work.link)}
             key={work.startDate}
           >
-            <TimelinePoint />
+            <TimelinePoint className="relative right-10" />
             <TimelineContent>
               <div className="flex items-center">
                 <img src={work.logo} className="h-[40px] w-[40px]" />
@@ -87,9 +87,11 @@ export const ExperiencePage = () => {
                 />
               </div>
               <Timeline.Time>
-                {dayjs(work.startDate).format("MMM. YYYY") +
-                  " - " +
-                  dayjs(work.endDate).format("MMM. YYYY")}
+                <span className="mt-10">
+                  {dayjs(work.startDate).format("MMM. YYYY") +
+                    " - " +
+                    dayjs(work.endDate).format("MMM. YYYY")}
+                </span>
               </Timeline.Time>
               <Timeline.Body className="my-2">
                 {work.description}

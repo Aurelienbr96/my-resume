@@ -8,7 +8,6 @@ import { Loader } from "../common/components/Loader";
 
 import { Alert } from "flowbite-react";
 
-import useBreakpoints from "../common/hooks/useBreakPoints";
 import { ErrorComp } from "../common/components/ErrorComp";
 import { contactSchema } from "./validationSchemas/contactSchema";
 import { SocialNetworks } from "./components/SocialNetworks";
@@ -22,7 +21,7 @@ type FormData = {
 export const ContactPage = () => {
   const { t } = useTranslation();
   const form = useRef<HTMLFormElement>(null);
-  const { isXs } = useBreakpoints();
+
   const {
     register,
     handleSubmit,
@@ -47,10 +46,7 @@ export const ContactPage = () => {
   );
 
   const containerClassName = classNames(
-    "mt-6 rounded-lg flex flex-col items-center p-6",
-    {
-      "w-[800px] shadow-lg": !isXs,
-    },
+    "mt-6 rounded-lg flex flex-col items-center p-6 bg-white md:w-[800px] md:shadow-lg",
   );
 
   return (

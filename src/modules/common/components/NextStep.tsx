@@ -16,7 +16,7 @@ export const NextStep = ({
   return (
     <Link to={to} className={containerClassName}>
       <p>Next step</p>
-      <div className="h-[60px] w-[60px] shadow-lg flex ml-4 justify-center items-center rounded-full border-[1px] border-light-grey">
+      <div className="h-[60px] bg-white w-[60px] shadow-lg flex ml-4 justify-center items-center rounded-full border-[1px] border-light-grey">
         <FaArrowRight className="fill-strong-purple" size={25} />
       </div>
     </Link>
