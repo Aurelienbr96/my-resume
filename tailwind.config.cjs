@@ -19,8 +19,12 @@ export default {
         "light-purple": "#5C5C83",
         "light-grey": "#F2F5F7",
         "strong-purple": "#545790",
+        "dark-purple": "#37395e",
         "color-medium-light": "#E9E9E9",
         error: "#C81E1D",
+      },
+      boxShadow: {
+        strong: '0 3px 6px 0px rgba(0, 0, 0, 0.16)',
       },
       keyframes: {
         moveRightTop: {
