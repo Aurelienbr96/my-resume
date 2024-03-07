@@ -44,7 +44,7 @@
         "startDate": "2021-07-01",
         "endDate": "2023-09-31",
         "location": "remote",
-        "link": "https://prium-portage.com/",
+        "link": "https://extranet.prium-portage.com/",
         "links": ["https://apps.apple.com/fr/app/prium-one/id1588692288"],
         "description": "As a Lead Developer specializing in React JS and React Native, I led the complete overhaul of Prium Portage's internal website, which was burdened by a significant accumulation of technical debt. I conducted the selection process and provided recommendations regarding the technical stack to be adopted, including React Hook Form, Tailwind, Vite, Axios, XState, among others. I established a scalable architecture with unit tests while ensuring the implementation of user interfaces designed by the UI/UX design team. Additionally, I worked on the development from scratch of the Prium One mobile application.",
         "skills": ["JavaScript", "ReactJS", "React Native", "TypeScript", "Storybook", "Jest", "Cypress", "Fastlane", "React Query"]

@@ -10,6 +10,8 @@ import enData from "../i18n/locales/en.json";
 import { IconLink, IconRedirect } from "../../assets/icons";
 import { useEffect, useState } from "react";
 import { Skill } from "./components/Skill";
+import { useHandleFilterClick } from "../router/hooks/useHandleFilterClick";
+import { NextStep } from "../common/components/NextStep";
 
 export type JSONData = typeof enData;
 
@@ -17,6 +19,13 @@ export const ExperiencePage = () => {
   const { t } = useTranslation();
   const [activeIndex, setActiveIndex] = useState(0);
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+
+  const {
+    searchParams,
+    handleRemoveFilters,
+    handleFilterClick,
+    searchParamsValues,
+  } = useHandleFilterClick();
 
   const workData = t("work", { returnObjects: true }) as JSONData["work"];
 
@@ -36,11 +45,27 @@ export const ExperiencePage = () => {
     window.open(link, "_blank");
   };
 
+  const getFilteredData = () => {
+    let results = workData;
+    searchParams.forEach((value) => {
+      const values = value.split(",");
+      results = results.filter((item) =>
+        values.every((element) => item.skills.includes(element)),
+      );
+    });
+    return results;
+  };
+
+  const filteredData = getFilteredData();
+
   return (
     <div>
       <h1 className="text-3xl text-center">Experiences and education</h1>
+      {Array.from(searchParams).length > 0 && (
+        <button onClick={handleRemoveFilters}>remove filters</button>
+      )}
       <Timeline className="mt-6">
-        {workData.map((work, index) => (
+        {filteredData.map((work, index) => (
           <TimelineItem
             className={`p-4 hover:cursor-pointer ${index <= activeIndex ? "animate-fade-in" : ""} ${index > activeIndex ? "hidden" : ""}`}
             onMouseEnter={() => setHoveredIndex(index)}
@@ -71,6 +96,7 @@ export const ExperiencePage = () => {
                 <div className="flex flex-wrap">
                   {work.links?.map((link) => (
                     <a
+                      key={link}
                       href={link}
                       onClick={(e) => e.stopPropagation()}
                       className={`flex items-center mt-6 ${isCurrentlyHovered(index) && "text-strong-purple fill-strong-purple"}`}
@@ -82,8 +108,17 @@ export const ExperiencePage = () => {
                   ))}
                 </div>
                 <div className="flex flex-wrap">
-                  {work.skills.map((skill) => (
-                    <Skill className="mr-4 mt-6">{skill}</Skill>
+                  {work.skills.map((skill, id) => (
+                    <Skill
+                      key={id}
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        handleFilterClick("name", skill);
+                      }}
+                      className={`mr-4 mt-6 ${searchParamsValues?.includes(skill) ? "bg-dark-purple" : ""}`}
+                    >
+                      {skill}
+                    </Skill>
                   ))}
                 </div>
               </Timeline.Body>
@@ -91,6 +126,11 @@ export const ExperiencePage = () => {
           </TimelineItem>
         ))}
       </Timeline>
+      {activeIndex === workData.length && (
+        <div className="flex my-6 justify-center">
+          <NextStep to="/contacts" />
+        </div>
+      )}
     </div>
   );
 };
