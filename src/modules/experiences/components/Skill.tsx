@@ -12,7 +12,7 @@ export const Skill = ({
 }: PropsWithChildren<Props>) => (
   <button
     onClick={onClick}
-    className={`px-4 py-2 bg-strong-purple hover:bg-dark-purple text-white rounded-lg ${className}`}
+    className={`px-4 py-2  hover:bg-dark-purple text-white rounded-lg ${className}`}
   >
     {children}
   </button>

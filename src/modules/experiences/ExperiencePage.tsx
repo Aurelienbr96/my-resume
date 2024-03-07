@@ -117,7 +117,7 @@ export const ExperiencePage = () => {
                         e.stopPropagation();
                         handleFilterClick("name", skill);
                       }}
-                      className={`mr-4 mt-6 ${searchParamsValues?.includes(skill) ? "bg-dark-purple" : ""}`}
+                      className={`mr-4 mt-6 ${searchParamsValues?.includes(skill) ? "bg-dark-purple" : "bg-strong-purple"}`}
                     >
                       {skill}
                     </Skill>
