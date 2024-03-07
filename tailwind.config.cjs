@@ -19,8 +19,10 @@ export default {
         "light-purple": "#5C5C83",
         "light-grey": "#F2F5F7",
         "strong-purple": "#545790",
-        "dark-purple": "#37395e",
+        "dark-purple": "#262745",
         "color-medium-light": "#E9E9E9",
+        "color-dark": "#10172B",
+        "alice-blue": "#F7FAFC",
         error: "#C81E1D",
       },
       boxShadow: {

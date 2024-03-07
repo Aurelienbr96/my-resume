@@ -13,7 +13,7 @@ export const Layout = () => {
   const { isXs } = useBreakpoints();
 
   return (
-    <div id="outer-container" className="flex flex-col px-6">
+    <div id="outer-container" className="flex flex-col px-6 bg-alice-blue min-h-screen">
       <div className="flex justify-around">
         {isXs && (
           <button onClick={toggleMenu}>
