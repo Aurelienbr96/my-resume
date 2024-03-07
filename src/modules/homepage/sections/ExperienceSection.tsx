@@ -6,16 +6,15 @@ import {
 } from "flowbite-react";
 import dayjs from "dayjs";
 import { useTranslation } from "react-i18next";
-import enData from "../i18n/locales/en.json";
-import { IconLink, IconRedirect } from "../../assets/icons";
+import enData from "../../i18n/locales/en.json";
+import { IconLink, IconRedirect } from "../../../assets/icons";
 import { useEffect, useState } from "react";
 import { Skill } from "./components/Skill";
-import { useHandleFilterClick } from "../router/hooks/useHandleFilterClick";
-import { NextStep } from "../common/components/NextStep";
+import { useHandleFilterClick } from "../../router/hooks/useHandleFilterClick";
 
 export type JSONData = typeof enData;
 
-export const ExperiencePage = () => {
+export const ExperienceSection = () => {
   const { t } = useTranslation();
   const [activeIndex, setActiveIndex] = useState(0);
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
@@ -60,14 +59,13 @@ export const ExperiencePage = () => {
 
   return (
     <div>
-      <h1 className="text-3xl text-center">Experiences and education</h1>
       {Array.from(searchParams).length > 0 && (
         <button onClick={handleRemoveFilters}>remove filters</button>
       )}
       <Timeline className="mt-6">
         {filteredData.map((work, index) => (
           <TimelineItem
-            className={`p-4 hover:cursor-pointer bg-white shadow-lg rounded-lg ${index <= activeIndex ? "animate-fade-in" : ""} ${index > activeIndex ? "hidden" : ""}`}
+            className={`p-4 hover:cursor-pointer bg-white shadow-lg rounded-lg`}
             onMouseEnter={() => setHoveredIndex(index)}
             onMouseLeave={() => setHoveredIndex(-1)}
             onClick={handleOnNavigateLink(work.link)}
@@ -77,13 +75,17 @@ export const ExperiencePage = () => {
             <TimelineContent>
               <div className="flex items-center">
                 <img src={work.logo} className="h-[40px] w-[40px]" />
-                <Timeline.Title
-                  className={`text-xl ml-[10px] ${isCurrentlyHovered(index) && "text-strong-purple"}`}
-                >
-                  {work.role} - {work.name}
+                <Timeline.Title>
+                  <p
+                    className={`text-base3 ml-[10px] ${isCurrentlyHovered(index) ? "text-strong-purple" : ""}`}
+                  >
+                    {work.role} - {work.name}
+                  </p>
                 </Timeline.Title>
                 <IconRedirect
-                  className={`${isCurrentlyHovered(index) && "fill-strong-purple animate-right-top"} ml-2 h-4 w-4`}
+                  height={16}
+                  width={16}
+                  className={`${isCurrentlyHovered(index) && "fill-strong-purple animate-right-top"} ml-2`}
                 />
               </div>
               <Timeline.Time>
@@ -128,11 +130,6 @@ export const ExperiencePage = () => {
           </TimelineItem>
         ))}
       </Timeline>
-      {activeIndex === workData.length && (
-        <div className="flex my-6 justify-center">
-          <NextStep to="/contacts" />
-        </div>
-      )}
     </div>
   );
 };

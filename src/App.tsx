@@ -16,7 +16,7 @@ const queryClient = new QueryClient();
 
 function App() {
   return (
-    <div className="font-montserrat">
+    <div className="font-montserrat scroll-smooth whitespace-pre-line">
       <MenuProvider>
         <QueryClientProvider client={queryClient}>
           <RouterProvider router={router} />
