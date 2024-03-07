@@ -55,7 +55,7 @@ export const HomePage = () => {
           >
             <img
               ref={(el) => (arrayOfRefs.current[1] = el)}
-              className="rounded-lg"
+              className="rounded-lg shadow-lg"
               src={me}
             />
           </AnimatedComponent>
