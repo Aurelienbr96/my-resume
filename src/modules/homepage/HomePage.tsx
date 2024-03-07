@@ -1,65 +1,49 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
-import classNames from "classnames";
-import me from "../../assets/img/me.jpeg";
-import useBreakpoints from "../common/hooks/useBreakPoints";
+import { ExperienceSection } from "./sections/ExperienceSection";
+import { ContactSection } from "./sections/ContactSection";
+import { AboutSection } from "./sections/AboutSection";
+import { useCallback, useRef, useState } from "react";
+import { useHandleSpyScroll } from "./hooks/useHandleSpyScroll";
 import { useTranslation } from "react-i18next";
-import { NextStep } from "../common/components/NextStep";
-import { useRef, useState } from "react";
-import { AnimatedComponent } from "../common/components/AnimatedComponent";
 
+export type SectionRef = (HTMLDivElement | null)[];
 
 export const HomePage = () => {
-  const { isXs } = useBreakpoints();
+  const sectionRefs = useRef<SectionRef>([]);
+
   const { t } = useTranslation();
-  const arrayOfRefs = useRef<any>([]);
+  const { activeSection } = useHandleSpyScroll(sectionRefs);
   const [activeAnimation, setActiveAnimation] = useState(0);
-
-  const handleAnimationEnd = () => {
+  const handleAnimationEnd = useCallback(() => {
     setActiveAnimation((current) => current + 1);
-  };
+  }, []);
 
-  const containerClassName = classNames({
-    "flex justify-between": !isXs,
-    "flex flex-col": isXs,
-  });
-
-  const textClassName = classNames("text-2xl delay-1", {
-    "my-6": isXs,
-  });
   return (
-    <div className={containerClassName}>
-      <div className="flex flex-1 flex-col pt-6 justify-between items-center">
-        {activeAnimation >= 0 && (
-          <AnimatedComponent
-            animationClass="animate-fade-in-left bg-white p-6 shadow-lg rounded-lg"
-            onAnimationEnd={handleAnimationEnd}
-          >
-            <p className={textClassName}>{t("basics.introduction")}</p>
-          </AnimatedComponent>
-        )}
-        {activeAnimation >= 2 && (
-          <AnimatedComponent
-            animationClass="animate-fade-in-left"
-            onAnimationEnd={handleAnimationEnd}
-          >
-            <NextStep to="/experiences" />
-          </AnimatedComponent>
-        )}
-        <div />
+    <div className="flex flex-col md:px-12 lg:px-64 pb-20 md:flex-row md:gap-4">
+      <div className="md:sticky md:top-0 lg:w-1/2 lg:py-10 md:max-h-screen">
+        <AboutSection
+          activeAnimation={activeAnimation}
+          handleAnimationEnd={handleAnimationEnd}
+          activeSection={activeSection}
+        />
       </div>
-      <div className="flex-1 flex justify-center">
-        {activeAnimation >= 1 && (
-          <AnimatedComponent
-            animationClass="animate-fade-in-left"
-            onAnimationEnd={handleAnimationEnd}
-          >
-            <img
-              ref={(el) => (arrayOfRefs.current[1] = el)}
-              className="rounded-lg shadow-lg relative z-[-10]"
-              src={me}
-            />
-          </AnimatedComponent>
-        )}
+      <div className="flex-col flex-1 lg:w-1/2">
+        <div
+          id="about"
+          ref={(el) => (sectionRefs.current[0] = el)}
+          className="lg:py-10"
+        >
+          <p className="px-6">{t("basics.summary")}</p>
+        </div>
+        <div
+          className="mt-6"
+          id="experiences"
+          ref={(el) => (sectionRefs.current[1] = el)}
+        >
+          <ExperienceSection />
+        </div>
+        <div className="md:relative md:right-[50%] my-16">
+          <ContactSection />
+        </div>
       </div>
     </div>
   );

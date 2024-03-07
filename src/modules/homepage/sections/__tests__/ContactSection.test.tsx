@@ -1,5 +1,5 @@
-import { fireEvent, render, screen, waitFor } from "../../../testing";
-import { ContactPage } from "../ContactPage";
+import { fireEvent, render, screen, waitFor } from "../../../../testing";
+import { ContactSection } from "../ContactSection";
 import { useSendEmail } from "../hooks/useSendEmail";
 import {
   requiredMessage,
@@ -20,7 +20,7 @@ jest.mock("../hooks/useSendEmail", () => ({
 
 describe("ContactPage", () => {
   it("renders a basic form", () => {
-    render(<ContactPage />);
+    render(<ContactSection />);
 
     expect(screen.getByPlaceholderText("name")).toBeInTheDocument();
     expect(screen.getByPlaceholderText("email")).toBeInTheDocument();
@@ -28,7 +28,7 @@ describe("ContactPage", () => {
     expect(screen.getByPlaceholderText("message")).toBeInTheDocument();
   });
   it("renders a submit button", () => {
-    render(<ContactPage />);
+    render(<ContactSection />);
     expect(screen.getByText("contactPage.submit")).toBeInTheDocument();
   });
 
@@ -41,7 +41,7 @@ describe("ContactPage", () => {
     };
 
     (useSendEmail as jest.Mock).mockReturnValueOnce(useSendEmailMock);
-    render(<ContactPage />);
+    render(<ContactSection />);
     expect(screen.getByText("an error just happened")).toBeInTheDocument();
   });
 
@@ -52,7 +52,7 @@ describe("ContactPage", () => {
     };
 
     (useSendEmail as jest.Mock).mockReturnValueOnce(useSendEmailMock);
-    render(<ContactPage />);
+    render(<ContactSection />);
     expect(screen.getByText("contactPage.success")).toBeInTheDocument();
   });
 
@@ -63,12 +63,12 @@ describe("ContactPage", () => {
     };
 
     (useSendEmail as jest.Mock).mockReturnValueOnce(useSendEmailMock);
-    render(<ContactPage />);
+    render(<ContactSection />);
     expect(screen.getByTestId("contact-page-loader")).toBeInTheDocument();
   });
 
   it("renders an error when email is not valid", async () => {
-    render(<ContactPage />);
+    render(<ContactSection />);
     const input = screen.getByPlaceholderText("email");
     fireEvent.change(input, {
       target: { value: "Please enter a valid email" },
@@ -83,7 +83,7 @@ describe("ContactPage", () => {
   });
 
   it("renders an error when email is empty", async () => {
-    render(<ContactPage />);
+    render(<ContactSection />);
     const input = screen.getByPlaceholderText("email");
     fireEvent.change(input, {
       target: { value: "" },
@@ -96,7 +96,7 @@ describe("ContactPage", () => {
   });
 
   it("calls mutate on on submit", async () => {
-    render(<ContactPage />);
+    render(<ContactSection />);
     const emailInput = screen.getByPlaceholderText("email");
     const messageInput = screen.getByPlaceholderText("message");
     fireEvent.change(emailInput, {

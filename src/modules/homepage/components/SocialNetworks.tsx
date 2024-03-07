@@ -1,4 +1,9 @@
 import {
+  GithubIcon,
+  LeetcodeIcon,
+  LinkedInIcon,
+} from "../../../assets/socialMedia";
+import {
   GITHUB_URL,
   LEETCODE_URL,
   LINKEDIN_URL,
@@ -6,16 +11,15 @@ import {
 
 export const SocialNetworks = () => (
   <div>
-    <p className="text-3xl text-center mt-6">Usefull links</p>
     <div className="flex mt-6">
       <a href={GITHUB_URL} target="_blank" className="mr-4">
-        Github
+        <GithubIcon height={24} width={24} />
       </a>
       <a href={LINKEDIN_URL} target="_blank" className="mr-4">
-        LinkedIn
+        <LinkedInIcon height={24} width={24} />
       </a>
       <a href={LEETCODE_URL} target="_blank">
-        LeetCode
+        <LeetcodeIcon height={24} width={24} />
       </a>
     </div>
   </div>

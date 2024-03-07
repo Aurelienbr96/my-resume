@@ -27,8 +27,6 @@ export const useHandleFilterClick = () => {
     setSearchParams({});
   };
 
-  console.log("searchParamsValues", searchParamsValues?.includes("ReactJS"));
-
   return {
     searchParams,
     setSearchParams,

@@ -4,13 +4,12 @@ import { useRef } from "react";
 import { useSendEmail } from "./hooks/useSendEmail";
 import { yupResolver } from "@hookform/resolvers/yup";
 import classNames from "classnames";
-import { Loader } from "../common/components/Loader";
+import { Loader } from "../../common/components/Loader";
 
 import { Alert } from "flowbite-react";
 
-import { ErrorComp } from "../common/components/ErrorComp";
+import { ErrorComp } from "../../common/components/ErrorComp";
 import { contactSchema } from "./validationSchemas/contactSchema";
-import { SocialNetworks } from "./components/SocialNetworks";
 
 type FormData = {
   message: string;
@@ -18,7 +17,7 @@ type FormData = {
   name?: string;
 };
 
-export const ContactPage = () => {
+export const ContactSection = () => {
   const { t } = useTranslation();
   const form = useRef<HTMLFormElement>(null);
 
@@ -98,7 +97,6 @@ export const ContactPage = () => {
           )}
         </button>
       </form>
-      <SocialNetworks />
     </div>
   );
 };
