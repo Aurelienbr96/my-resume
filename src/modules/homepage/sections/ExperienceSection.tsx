@@ -62,16 +62,16 @@ export const ExperienceSection = () => {
       {Array.from(searchParams).length > 0 && (
         <button onClick={handleRemoveFilters}>remove filters</button>
       )}
-      <Timeline className="mt-6 group">
+      <Timeline className="mt-6 group border-transparent md:border-l mr-10 md:mr-0">
         {filteredData.map((work, index) => (
           <TimelineItem
-            className={`p-4 z-50 transition opacity-100 dark:group-hover:opacity-50 hover:!opacity-100  hover:cursor-pointer dark:lg:group-hover:bg-slate-800/50 dark:lg:hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] dark:lg:hover:drop-shadow-lg bg-white dark:bg-dark shadow-strong rounded-lg`}
+            className={`p-0 md:p-4 z-50 transition opacity-100 dark:group-hover:opacity-50 hover:!opacity-100  hover:cursor-pointer dark:lg:group-hover:bg-slate-800/50 dark:lg:hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] dark:lg:hover:drop-shadow-lg bg-white dark:bg-dark shadow-strong rounded-lg`}
             onMouseEnter={() => setHoveredIndex(index)}
             onMouseLeave={() => setHoveredIndex(-1)}
             onClick={handleOnNavigateLink(work.link)}
             key={work.startDate}
           >
-            <TimelinePoint className="relative right-[40.5px]" />
+            <TimelinePoint className="hidden md:block relative right-[40.5px]" />
             <TimelineContent>
               <div className="flex items-center">
                 <img src={work.logo} className="h-[40px] w-[40px]" />
