@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/ban-ts-comment */
 import {
   Timeline,
   TimelineContent,
@@ -12,6 +11,7 @@ import { IconLink, IconRedirect } from "../../../assets/icons";
 import { useEffect, useRef, useState } from "react";
 import { Skill } from "./components/Skill";
 import { useHandleFilterClick } from "../../router/hooks/useHandleFilterClick";
+import { useAddAnimationOnScroll } from "./hooks/useAddAnimationOnScroll";
 
 export type JSONData = typeof enData;
 
@@ -21,6 +21,12 @@ export const ExperienceSection = () => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
   const containerRef = useRef(null);
   const animationStateRef = useRef({});
+
+  useAddAnimationOnScroll(
+    containerRef,
+    animationStateRef,
+    ".animate-on-scroll",
+  );
 
   const {
     searchParams,
@@ -57,50 +63,6 @@ export const ExperienceSection = () => {
     });
     return results;
   };
-
-  useEffect(() => {
-    if (containerRef.current) {
-      const elements =
-        // @ts-ignore
-        containerRef.current.querySelectorAll(".animate-on-scroll");
-      const screenWidth = window.innerWidth;
-
-      if (screenWidth <= 768) {
-        const observer = new IntersectionObserver(
-          (entries) => {
-            entries.forEach((entry) => {
-              if (
-                entry.isIntersecting &&
-                // @ts-ignore
-                !animationStateRef.current[entry.target.dataset.index]
-              ) {
-                // @ts-ignore
-                const index = parseInt(entry.target.dataset.index, 10);
-                const animationClass =
-                  index % 2 === 0
-                    ? "animate-slide-in-left"
-                    : "animate-slide-in-right";
-                // @ts-ignore
-                animationStateRef.current[entry.target.dataset.index] = true;
-                entry.target.classList.add(animationClass);
-              }
-            });
-          },
-          {
-            threshold: 0.1,
-          },
-        );
-
-        elements.forEach((el: Element, index: number) => {
-          // @ts-ignore
-          el.dataset.index = index;
-          observer.observe(el);
-        });
-
-        return () => elements.forEach((el: Element) => observer.unobserve(el));
-      }
-    }
-  }, []);
 
   const filteredData = getFilteredData();
 
