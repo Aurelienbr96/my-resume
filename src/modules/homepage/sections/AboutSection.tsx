@@ -48,7 +48,7 @@ export const AboutSection = ({
   const isContactActive = activeSection === "contact";
 
   return (
-    <div className="sticky left-0 top-0 text-center md:text-left h-full pb-20 flex flex-1 flex-col justify-between">
+    <div className="md:sticky px-6 md:px-0 md:left-0 md:top-0 text-left h-full pb-20 flex flex-1 flex-col justify-between">
       <div>
         {activeAnimation >= 0 && (
           <MobileAnimatedComponent
@@ -86,7 +86,7 @@ export const AboutSection = ({
             animationClass="animate-fade-in-left "
             onAnimationEnd={handleAnimationEnd}
           >
-            <div className="flex items-center">
+            <div className=" hidden md:flex items-center">
               <ThemeSwitch />
               <LanguageSwitch className="ml-4" languages={supportedLanguages} />
             </div>
