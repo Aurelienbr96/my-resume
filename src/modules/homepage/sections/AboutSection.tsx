@@ -85,13 +85,13 @@ export const AboutSection = ({
           >
             <nav className="hidden md:block">
               <ul className="mt-16 w-max">
-                <MenuText href="about" isActive={isAboutActive}>
+                <MenuText href="#about" isActive={isAboutActive}>
                   About
                 </MenuText>
-                <MenuText href="experiences" isActive={isExperienceActive}>
+                <MenuText href="#experiences" isActive={isExperienceActive}>
                   Experiences
                 </MenuText>
-                <MenuText href="contact" isActive={isContactActive}>
+                <MenuText href="#contact" isActive={isContactActive}>
                   Contact
                 </MenuText>
               </ul>

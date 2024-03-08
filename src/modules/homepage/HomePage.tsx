@@ -19,7 +19,7 @@ export const HomePage = () => {
 
   return (
     <div className="flex flex-col  lg:pr-64 md:flex-row md:gap-4">
-      <div className="md:sticky md:top-0 bg-purple-white dark:bg-dark lg:px-32 lg:py-28 md:max-h-screen">
+      <div className="md:sticky md:top-0 lg:px-32 lg:py-28 md:max-h-screen">
         <AboutSection
           activeAnimation={activeAnimation}
           handleAnimationEnd={handleAnimationEnd}
@@ -63,7 +63,6 @@ export const HomePage = () => {
           {activeAnimation >= 7 && <ContactSection />}
         </div>
       </div>
-      {activeAnimation < 5 && <div className="h-[6000px]" />}
     </div>
   );
 };
