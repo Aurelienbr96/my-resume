@@ -38,6 +38,7 @@ export default {
         "fade-in-down": "fadeInDown 0.5s ease-in-out forwards",
         "slide-in-right": "slideInLeft 1s ease-in-out forwards",
         "slide-in-left": "slideInRight 1s ease-in-out forwards",
+        "slide-in-top": "slideInBottom 1s ease-in-out forwards",
       },
       colors: {
         "light-purple": "#5C5C83",
@@ -86,6 +87,10 @@ export default {
         },
         slideInLeft: {
           "0%": { opacity: 0, transform: "translateX(-100%)" },
+          "100%": { opacity: 1, transform: "translateY(0)" },
+        },
+        slideInBottom: {
+          "0%": { opacity: 0, transform: "translateY(-100%)" },
           "100%": { opacity: 1, transform: "translateY(0)" },
         },
       },
