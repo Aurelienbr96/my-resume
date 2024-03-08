@@ -19,18 +19,18 @@ export const HomePage = () => {
 
   return (
     <div className="flex flex-col  lg:pr-64 md:flex-row md:gap-4">
-      <div className="md:sticky md:top-0 lg:px-32 lg:py-28 md:max-h-screen">
+      <div className="md:sticky md:top-0 lg:px-32 lg:py-20 md:max-h-screen">
         <AboutSection
           activeAnimation={activeAnimation}
           handleAnimationEnd={handleAnimationEnd}
           activeSection={activeSection}
         />
       </div>
-      <div className="flex-col flex-1 lg:w-1/2 lg:pt-16">
+      <div className="flex-col flex-1 lg:w-1/2 lg:pt-20">
         <div
           id="about"
           ref={(el) => (sectionRefs.current[0] = el)}
-          className="lg:py-12"
+          className="lg:pb-12"
         >
           {activeAnimation >= 5 && (
             <MobileAnimatedComponent

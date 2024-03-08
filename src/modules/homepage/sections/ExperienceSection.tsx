@@ -65,7 +65,7 @@ export const ExperienceSection = () => {
       <Timeline className="mt-6 group">
         {filteredData.map((work, index) => (
           <TimelineItem
-            className={`p-4 z-50 transition opacity-100 group-hover:opacity-50 hover:!opacity-100  hover:cursor-pointer lg:group-hover:bg-slate-800/50 lg:hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:hover:drop-shadow-lg bg-white dark:bg-dark shadow-strong rounded-lg`}
+            className={`p-4 z-50 transition opacity-100 dark:group-hover:opacity-50 hover:!opacity-100  hover:cursor-pointer dark:lg:group-hover:bg-slate-800/50 dark:lg:hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] dark:lg:hover:drop-shadow-lg bg-white dark:bg-dark shadow-strong rounded-lg`}
             onMouseEnter={() => setHoveredIndex(index)}
             onMouseLeave={() => setHoveredIndex(-1)}
             onClick={handleOnNavigateLink(work.link)}

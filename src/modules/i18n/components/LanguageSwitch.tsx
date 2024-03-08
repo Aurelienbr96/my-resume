@@ -58,7 +58,7 @@ export const LanguageSwitch = ({ className, languages }: Props) => {
         <SelectArrows className="ml-[5px] fill-white md:fill-black" isOpen={toggle} />
       </button>
       {toggle && (
-        <div className="absolute top-6 left-[-15px] md:left-[-12px] z-100 shadow-strong flex-col">
+        <div className="absolute top-6 md:left-[-12px] z-100 shadow-strong flex-col">
           {languages.map(
             ({ Flag, key }) =>
               key !== i18n.language && (

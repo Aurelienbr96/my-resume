@@ -2,6 +2,9 @@ import { useTranslation } from "react-i18next";
 import { MobileAnimatedComponent } from "../../common/components/AnimatedComponent";
 import { SocialNetworks } from "../components/SocialNetworks";
 import me from "../../../assets/img/me.jpeg";
+import { ThemeSwitch } from "../../common/components/ThemeSwitch";
+import { LanguageSwitch } from "../../i18n/components/LanguageSwitch";
+import { supportedLanguages } from "../../i18n/constants/supportedLanguages";
 
 type Props = {
   activeSection: string | null;
@@ -83,8 +86,19 @@ export const AboutSection = ({
             animationClass="animate-fade-in-left "
             onAnimationEnd={handleAnimationEnd}
           >
+            <div className="flex items-center">
+              <ThemeSwitch />
+              <LanguageSwitch className="ml-4" languages={supportedLanguages} />
+            </div>
+          </MobileAnimatedComponent>
+        )}
+        {activeAnimation >= 4 && (
+          <MobileAnimatedComponent
+            animationClass="animate-fade-in-left "
+            onAnimationEnd={handleAnimationEnd}
+          >
             <nav className="hidden md:block">
-              <ul className="mt-16 w-max">
+              <ul className="mt-10 w-max">
                 <MenuText href="#about" isActive={isAboutActive}>
                   About
                 </MenuText>
@@ -98,6 +112,7 @@ export const AboutSection = ({
             </nav>
           </MobileAnimatedComponent>
         )}
+
         {activeAnimation >= 4 && (
           <MobileAnimatedComponent
             animationClass="animate-fade-in-left "
@@ -106,7 +121,7 @@ export const AboutSection = ({
             <img
               src={me}
               alt="me"
-              className="rounded-full h-[200px] w-[200px] mt-6 shadow-strong"
+              className="rounded-full h-[200px] w-[200px] mt-14 shadow-strong"
             />
           </MobileAnimatedComponent>
         )}
