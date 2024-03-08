@@ -11,7 +11,7 @@ import {
 
 export const SocialNetworks = () => (
   <div>
-    <div className="flex mt-6">
+    <div className="flex justify-center md:justify-start mt-6">
       <a href={GITHUB_URL} target="_blank" className="mr-4">
         <GithubIcon height={24} width={24} />
       </a>

@@ -118,11 +118,13 @@ export const AboutSection = ({
             animationClass="animate-fade-in-left "
             onAnimationEnd={handleAnimationEnd}
           >
-            <img
-              src={me}
-              alt="me"
-              className="rounded-full h-[200px] w-[200px] mt-14 shadow-strong"
-            />
+            <div className="flex w-full justify-center md:justify-start">
+              <img
+                src={me}
+                alt="me"
+                className="rounded-full h-[200px] w-[200px] mt-14 shadow-strong"
+              />
+            </div>
           </MobileAnimatedComponent>
         )}
       </div>
