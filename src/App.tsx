@@ -8,6 +8,7 @@ import dayjs from "dayjs";
 import advancedFormat from "dayjs/plugin/advancedFormat";
 import customParseFormat from "dayjs/plugin/customParseFormat";
 import { MenuProvider } from "./modules/router/contexts/menuContext";
+import { ThemProvider } from "./modules/common/contexts/ThemeContext";
 
 dayjs.extend(customParseFormat);
 dayjs.extend(advancedFormat);
@@ -15,14 +16,16 @@ dayjs.extend(advancedFormat);
 const queryClient = new QueryClient();
 
 function App() {
+  document.documentElement.classList.add("dark");
+
   return (
-    <div className="font-montserrat scroll-smooth whitespace-pre-line">
+    <ThemProvider>
       <MenuProvider>
         <QueryClientProvider client={queryClient}>
           <RouterProvider router={router} />
         </QueryClientProvider>
       </MenuProvider>
-    </div>
+    </ThemProvider>
   );
 }
 

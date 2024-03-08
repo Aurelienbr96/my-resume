@@ -4,7 +4,7 @@ import { SectionRef } from "../HomePage";
 export const useHandleSpyScroll = (
   sectionRefs: MutableRefObject<SectionRef>,
 ) => {
-  const [activeSection, setActiveSection] = useState<string | null>(null);
+  const [activeSection, setActiveSection] = useState<string | null>("about");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -22,7 +22,8 @@ export const useHandleSpyScroll = (
     };
 
     window.addEventListener("scroll", handleScroll);
-    handleScroll();
+    // set a timeout so that
+    setTimeout(handleScroll, 1500);
     return () => window.removeEventListener("scroll", handleScroll);
   }, [sectionRefs]);
 

@@ -1,10 +1,16 @@
 /* eslint-disable no-undef */
 /** @type {import('tailwindcss').Config} */
 export default {
+  darkMode: "selector",
   content: [
     "./src/**/*.{html,js,ts,tsx}",
     "node_modules/flowbite-react/lib/esm/**/*.js",
   ],
+  variants: {
+    extend: {
+      opacity: ["dark", "group-hover"],
+    },
+  },
   theme: {
     fontFamily: {
       montserrat: ["Montserrat", "sans-serif"],
@@ -15,7 +21,7 @@ export default {
         sm1: ["13px", "14px"],
         sm2: ["14px", "18px"],
         sm3: ["14px", "20px"],
-        base: ["15px", "16px"],
+        base: ["15px", "20px"],
         base2: ["16px", "19px"],
         "text-tutorial": ["16px", "23px"],
         base3: ["18px", "20px"],
@@ -35,10 +41,18 @@ export default {
         "light-purple": "#5C5C83",
         "light-grey": "#F2F5F7",
         "strong-purple": "#545790",
+        "violet-poison": "#7935c9",
+        "violet-light": "#a27fdf",
         "dark-purple": "#262745",
+        "purple-white": "#efeafb",
         "color-medium-light": "#E9E9E9",
         "color-dark": "#10172B",
         "alice-blue": "#F7FAFC",
+        dark: "#0F182C",
+        "dark-text": "#8396BD",
+        "dark-highlight": "#D8E1EE",
+        "dark-skill-text": "#53D3D3",
+        "dark-skill-bg": "#1A3655",
         error: "#C81E1D",
       },
       boxShadow: {

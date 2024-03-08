@@ -17,7 +17,7 @@ export function useSequentialAnimation<T extends HTMLDivElement>(
     };
 
     if (animationDuration && animationDuration > 200) {
-      timer = setTimeout(onAnimationEnd, animationDuration - 500);
+      timer = setTimeout(onAnimationEnd, animationDuration - 600);
     }
 
     element.addEventListener("animationend", handleAnimationEnd);
