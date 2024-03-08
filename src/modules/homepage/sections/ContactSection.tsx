@@ -45,7 +45,7 @@ export const ContactSection = () => {
   );
 
   const containerClassName = classNames(
-    "mt-6 rounded-lg flex flex-col items-center p-6 bg-white md:w-[800px] md:shadow-lg",
+    "mt-6 rounded-lg flex flex-col items-center p-6 bg-white dark:bg-dark md:w-[800px] md:shadow-strong",
   );
 
   return (

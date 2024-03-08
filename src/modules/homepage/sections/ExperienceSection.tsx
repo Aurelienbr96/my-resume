@@ -62,22 +62,22 @@ export const ExperienceSection = () => {
       {Array.from(searchParams).length > 0 && (
         <button onClick={handleRemoveFilters}>remove filters</button>
       )}
-      <Timeline className="mt-6">
+      <Timeline className="mt-6 group">
         {filteredData.map((work, index) => (
           <TimelineItem
-            className={`p-4 hover:cursor-pointer bg-white shadow-lg rounded-lg`}
+            className={`p-4 transition opacity-100 group-hover:opacity-50 hover:!opacity-100  hover:cursor-pointer lg:group-hover:bg-slate-800/50 lg:hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:hover:drop-shadow-lg bg-white dark:bg-dark shadow-strong rounded-lg`}
             onMouseEnter={() => setHoveredIndex(index)}
             onMouseLeave={() => setHoveredIndex(-1)}
             onClick={handleOnNavigateLink(work.link)}
             key={work.startDate}
           >
-            <TimelinePoint className="relative right-10" />
+            <TimelinePoint className="relative right-[40.5px]" />
             <TimelineContent>
               <div className="flex items-center">
                 <img src={work.logo} className="h-[40px] w-[40px]" />
                 <Timeline.Title>
                   <p
-                    className={`text-base3 ml-[10px] ${isCurrentlyHovered(index) ? "text-strong-purple" : ""}`}
+                    className={`text-base3 ml-[10px] dark:text-dark-highlight ${isCurrentlyHovered(index) ? "text-strong-purple dark:text-dark-skill-text" : ""}`}
                   >
                     {work.role} - {work.name}
                   </p>
@@ -85,7 +85,7 @@ export const ExperienceSection = () => {
                 <IconRedirect
                   height={16}
                   width={16}
-                  className={`${isCurrentlyHovered(index) && "fill-strong-purple animate-right-top"} ml-2`}
+                  className={`${isCurrentlyHovered(index) && "fill-strong-purple dark:fill-dark-skill-text animate-right-top"} ml-2`}
                 />
               </div>
               <Timeline.Time>
@@ -103,7 +103,7 @@ export const ExperienceSection = () => {
                       key={link}
                       href={link}
                       onClick={(e) => e.stopPropagation()}
-                      className={`flex items-center mt-6 ${isCurrentlyHovered(index) && "text-strong-purple fill-strong-purple"}`}
+                      className={`flex items-center mt-6 ${isCurrentlyHovered(index) && "text-strong-purple fill-strong-purple dark:fill-dark-skill-text dark:text-dark-skill-text"}`}
                       target="_blank"
                     >
                       <IconLink />
