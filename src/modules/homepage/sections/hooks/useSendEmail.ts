@@ -14,7 +14,7 @@ export const useSendEmail = (
         "template_kghaqa8",
         form.current || "",
         {
-          publicKey: "79B5tLCbogVG8Kh5q",
+          publicKey: import.meta.env.VITE_MIXPANEL_TOKEN,
         },
       ),
 
