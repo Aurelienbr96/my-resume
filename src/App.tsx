@@ -14,7 +14,7 @@ import { ThemProvider } from "./modules/common/contexts/ThemeContext";
 dayjs.extend(customParseFormat);
 dayjs.extend(advancedFormat);
 
-mixpanel.init('4c439a95160e77604306f6937fa9a487', {debug: true, track_pageview: true, persistence: 'localStorage'});
+mixpanel.init(import.meta.env.VITE_MIXPANEL_TOKEN, {debug: true, track_pageview: true, persistence: 'localStorage'});
 
 const queryClient = new QueryClient();
 

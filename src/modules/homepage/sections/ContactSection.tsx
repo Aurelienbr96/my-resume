@@ -41,7 +41,7 @@ export const ContactSection = () => {
   );
 
   const submitInputClassName = classNames(
-    "hover:cursor-pointer mt-6 h-[40px] w-[100px] bg-strong-purple text-white rounded-lg flex justify-center items-center",
+    "hover:cursor-pointer mt-6 px-6 py-2 bg-strong-purple text-white rounded-lg flex justify-center items-center",
   );
 
   const containerClassName = classNames(
