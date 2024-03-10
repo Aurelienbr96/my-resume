@@ -21,6 +21,7 @@ export const ExperienceSection = () => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
   const containerRef = useRef(null);
   const animationStateRef = useRef({});
+  const { i18n } = useTranslation();
 
   useAddAnimationOnScroll(
     containerRef,
@@ -72,7 +73,7 @@ export const ExperienceSection = () => {
         <button onClick={handleRemoveFilters}>remove filters</button>
       )}
       <div ref={containerRef}>
-        <Timeline className="mt-6 group border-transparent md:border-l mr-10 md:mr-0">
+        <Timeline className="mt-6 group border-transparent md:border-gray-200 mr-10 md:mr-0">
           {filteredData.map((work, index) => (
             <TimelineItem
               className={`animate-on-scroll opacity-0 p-0 md:p-4 z-50 transition lg:opacity-100 lg:dark:group-hover:opacity-50 lg:hover:!opacity-100  hover:cursor-pointer dark:lg:group-hover:bg-slate-800/50 dark:lg:hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] dark:lg:hover:drop-shadow-lg bg-white dark:bg-dark shadow-strong rounded-lg`}
@@ -140,6 +141,26 @@ export const ExperienceSection = () => {
             </TimelineItem>
           ))}
         </Timeline>
+        <div>
+          <a
+            href={i18n.language === "en" ? '/resume.pdf' : '/cv.pdf'}
+            className="inline-flex items-center group font-bold dark:text-dark-highlight ml-6 md:ml-0"
+            target="_blank"
+            rel="noreferrer noopener"
+            aria-label="View Full Résumé (opens in a new tab)"
+          >
+            <span className="group-hover:text-strong-purple dark:group-hover:text-dark-skill-text">
+              {i18n.t('basics.view-resume')}
+            </span>
+            <IconRedirect
+              height={16}
+              width={16}
+              className={
+                "group-hover:fill-strong-purple dark:group-hover:fill-dark-skill-text group-hover:animate-right-top"
+              }
+            />
+          </a>
+        </div>
       </div>
     </div>
   );
