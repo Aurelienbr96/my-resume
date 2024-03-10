@@ -41,7 +41,7 @@ export const ContactSection = () => {
   );
 
   const submitInputClassName = classNames(
-    "hover:cursor-pointer mt-6 px-6 py-2 bg-strong-purple text-white rounded-lg flex justify-center items-center",
+    "hover:cursor-pointer mt-6 px-6 py-2 bg-strong-purple text-white rounded-lg flex justify-center items-center dark:bg-dark-skill-bg dark:text-dark-skill-text",
   );
 
   const containerClassName = classNames(
@@ -50,7 +50,7 @@ export const ContactSection = () => {
 
   return (
     <div className="flex flex-col items-center">
-      <h1 className="text-3xl text-center">{t("contactPage.title")}</h1>
+      <h1 className="text-3xl text-center dark:text-dark-highlight">{t("contactPage.title")}</h1>
 
       <form
         ref={form}
