@@ -16,8 +16,6 @@ const getRecommendations = async (filters?: FiltersType) => {
     throw new Error("Network response was not ok");
   }
 
-  console.log(response);
-
   return response.data;
 };
 

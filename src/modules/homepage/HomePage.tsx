@@ -4,7 +4,7 @@ import { StickyNav } from "./sections/StickyNav";
 import { useCallback, useRef, useState } from "react";
 import { useHandleSpyScroll } from "./hooks/useHandleSpyScroll";
 import { useTranslation } from "react-i18next";
-import { MobileAnimatedComponent } from "../common/components/animatedComponents/AnimatedComponent";
+import { MobileAnimatedComponent } from "../common/components/animatedComponents/MobileAnimatedComponent";
 import { RecommendationsSection } from "./sections/RecommendationsSection";
 import { StickySection } from "./components/StickySection";
 

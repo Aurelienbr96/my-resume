@@ -19,12 +19,14 @@ export const SelectArrows = ({
   const containerClassName = classNames(className);
   return isOpen || isLoading ? (
     <FilterUpIcon
+      data-testid="filter-up-icon"
       className={containerClassName}
       height={height}
       width={width}
     />
   ) : (
     <FilterDownIcon
+      data-testid="filter-down-icon"
       className={containerClassName}
       height={height}
       width={width}

@@ -8,9 +8,9 @@ export const ThemeSwitch = () => {
   const { isDarkMode, handleOnChange } = useContext(ThemeContext);
   return (
     <div className="flex items-center my-4 mr-4">
-      <IoSunny />
+      <IoSunny data-testid="io-sunny" />
       <Switch className="mx-2" checked={isDarkMode} onChange={handleOnChange} />
-      <IoMdMoon />
+      <IoMdMoon data-testid="io-moon" />
     </div>
   );
 };
