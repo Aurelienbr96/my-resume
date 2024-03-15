@@ -1,6 +1,6 @@
 import { PropsWithChildren } from "react";
-import { useSequentialAnimation } from "../hooks/useHandleNextAnimation";
-import useBreakpoints from "../hooks/useBreakPoints";
+import { useSequentialAnimation } from "../../hooks/useHandleNextAnimation";
+import useBreakpoints from "../../hooks/useBreakPoints";
 
 type Props = {
   animationClass: string;
@@ -11,17 +11,25 @@ export const MobileAnimatedComponent = ({
   animationClass,
   children,
   onAnimationEnd,
-}: PropsWithChildren<Props>) => {
+  activeAnimation,
+  animationIndex,
+}: PropsWithChildren<
+  Props & { activeAnimation: number; animationIndex: number }
+>) => {
   const { isXs } = useBreakpoints();
   if (isXs) return children;
 
   return (
-    <AnimatedComponent
-      animationClass={animationClass}
-      onAnimationEnd={onAnimationEnd}
-    >
-      {children}
-    </AnimatedComponent>
+    <>
+      {activeAnimation >= animationIndex && (
+        <AnimatedComponent
+          animationClass={animationClass}
+          onAnimationEnd={onAnimationEnd}
+        >
+          {children}
+        </AnimatedComponent>
+      )}
+    </>
   );
 };
 

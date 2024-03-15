@@ -13,9 +13,6 @@ dist
 dist-ssr
 *.local
 
-# todo later
-src/modules/recommendations/*
-
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

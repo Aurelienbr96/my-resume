@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { IoMdMoon } from "react-icons/io";
 import { IoSunny } from "react-icons/io5";
 import { Switch } from "./Switch";
-import ThemeContext from "../contexts/ThemeContext";
+import ThemeContext from "../../contexts/ThemeContext";
 
 export const ThemeSwitch = () => {
   const { isDarkMode, handleOnChange } = useContext(ThemeContext);

@@ -1,9 +1,9 @@
-import classNames from 'classnames';
-import { useTranslation } from 'react-i18next';
-import { ReactElement, useRef, useState } from 'react';
-import { FlagFr, FlagUk } from '../../../assets/flags';
-import { useOnClickOutside } from '../../common/hooks/useOnClickOutside';
-import { SelectArrows } from '../../common/components/SelectArrows';
+import classNames from "classnames";
+import { useTranslation } from "react-i18next";
+import { ReactElement, useRef, useState } from "react";
+import { FlagFr, FlagUk } from "../../../assets/flags";
+import { useOnClickOutside } from "../../common/hooks/useOnClickOutside";
+import { SelectArrows } from "../../common/components/buttons/components/SelectArrows";
 
 export type LanguagesType = Array<{
   key: string;
@@ -26,7 +26,7 @@ export const LanguageSwitch = ({ className, languages }: Props) => {
   };
 
   const renderCurrentFlag = () => {
-    if (i18n.language === 'en')
+    if (i18n.language === "en")
       return <FlagUk data-testid="uk-flag" className="w-[26px] h-[18px]" />;
     return <FlagFr data-testid="fr-flag" className="w-[26px] h-[18px]" />;
   };
@@ -41,11 +41,14 @@ export const LanguageSwitch = ({ className, languages }: Props) => {
       },
     };
 
-    localStorage.setItem('languageLocale', JSON.stringify(languageObject));
+    localStorage.setItem("languageLocale", JSON.stringify(languageObject));
     i18n.changeLanguage(key);
   };
 
-  const containerClassName = classNames('ml-8 md:ml-0 mt-6 md:mt-0 relative', className);
+  const containerClassName = classNames(
+    "ml-8 md:ml-0 mt-6 md:mt-0 relative",
+    className,
+  );
 
   return (
     <div ref={ref} className={containerClassName}>
@@ -55,7 +58,10 @@ export const LanguageSwitch = ({ className, languages }: Props) => {
         onClick={handleOnClick}
       >
         {renderCurrentFlag()}
-        <SelectArrows className="ml-[5px] fill-white md:fill-black" isOpen={toggle} />
+        <SelectArrows
+          className="ml-[5px] fill-white md:fill-black"
+          isOpen={toggle}
+        />
       </button>
       {toggle && (
         <div className="absolute top-6 md:left-[-12px] z-100 shadow-strong flex-col">

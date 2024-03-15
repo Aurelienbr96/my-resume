@@ -22,7 +22,7 @@
     "types": ["jest", "node", "@testing-library/jest-dom"],
 
     "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
+    "allowSyntheticDefaultImports": true
   },
   "include": ["src", "env.d.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
