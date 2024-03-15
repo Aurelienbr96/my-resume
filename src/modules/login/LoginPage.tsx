@@ -20,11 +20,12 @@ export const LoginPage = () => {
     register,
     handleSubmit,
     formState: { errors },
+    setError,
   } = useForm<LoginFormData>({
     resolver: yupResolver(loginSchema),
   });
 
-  const { mutate, isPending } = useLogin();
+  const { mutate, isPending } = useLogin(setError);
   const onSubmit = (formDate: LoginFormData) => {
     mutate(formDate);
   };

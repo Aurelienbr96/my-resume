@@ -37,7 +37,7 @@ export const AboutDesktopMenu = ({
   isRecommendationsActive,
   isContactActive,
 }: Props) => {
-  const { recommendations, isLoading } = useGetRecommendations();
+  const { recommendations } = useGetRecommendations();
   return (
     <nav className="hidden md:block">
       <ul className="mt-10 w-max">
@@ -47,7 +47,7 @@ export const AboutDesktopMenu = ({
         <MenuText href="#experiences" isActive={isExperienceActive}>
           Experiences
         </MenuText>
-        {recommendations && recommendations.length > 0 && !isLoading && (
+        {recommendations && recommendations.length > 0 && (
           <MenuText href="#recommendations" isActive={isRecommendationsActive}>
             Recommendations
           </MenuText>

@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { MobileAnimatedComponent } from "../../common/components/animatedComponents/AnimatedComponent";
+import { MobileAnimatedComponent } from "../../common/components/animatedComponents/MobileAnimatedComponent";
 import { SocialNetworks } from "../components/SocialNetworks";
 import me from "../../../assets/img/me.jpeg";
 import { ThemeSwitch } from "../../common/components/buttons/ThemeSwitch";
