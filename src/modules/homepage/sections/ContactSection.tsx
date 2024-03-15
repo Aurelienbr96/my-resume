@@ -4,12 +4,14 @@ import { useRef } from "react";
 import { useSendEmail } from "./hooks/useSendEmail";
 import { yupResolver } from "@hookform/resolvers/yup";
 import classNames from "classnames";
-import { Loader } from "../../common/components/Loader";
+import { Loader } from "../../common/components/loaders/Loader";
 
 import { Alert } from "flowbite-react";
 
-import { ErrorComp } from "../../common/components/ErrorComp";
+import { ErrorComp } from "../../common/components/errors/ErrorComp";
 import { contactSchema } from "./validationSchemas/contactSchema";
+import { InputText } from "../../common/components/inputs/InputText";
+import { TextArea } from "../../common/components/inputs/TextArea";
 
 type FormData = {
   message: string;
@@ -32,14 +34,6 @@ export const ContactSection = () => {
   const { mutate, isPending, isSuccess, error } = useSendEmail(form, t);
   const onSubmit = () => mutate();
 
-  const inputClassName = classNames(
-    "rounded-[5px] mt-6 h-[36px] border-2 py-2 border-color-medium-light hover:bg-color-light-grey w-[310px] px-5",
-  );
-
-  const textareaClassName = classNames(
-    "rounded-[5px] mt-6 h-[200px] border-2 py-2 border-color-medium-light hover:bg-color-light-grey min-w-[310px] px-5",
-  );
-
   const submitInputClassName = classNames(
     "hover:cursor-pointer mt-6 px-6 py-2 bg-strong-purple text-white rounded-lg flex justify-center items-center dark:bg-dark-skill-bg dark:text-dark-skill-text",
   );
@@ -50,29 +44,20 @@ export const ContactSection = () => {
 
   return (
     <div className="flex flex-col items-center">
-      <h1 className="text-3xl text-center dark:text-dark-highlight">{t("contactPage.title")}</h1>
+      <h1 className="text-3xl text-center dark:text-dark-highlight">
+        {t("contactPage.title")}
+      </h1>
 
       <form
         ref={form}
         onSubmit={handleSubmit(onSubmit)}
         className={containerClassName}
       >
-        <input
-          className={inputClassName}
-          placeholder="name"
-          {...register("name")}
-        />
-        <input
-          placeholder="email"
-          className={inputClassName}
-          {...register("email")}
-        />
+        <InputText placeholder="name" {...register("name")} />
+        {errors.name && <ErrorComp>{errors.name.message}</ErrorComp>}
+        <InputText placeholder="email" {...register("email")} />
         {errors.email && <ErrorComp>{errors.email.message}</ErrorComp>}
-        <textarea
-          className={textareaClassName}
-          placeholder="message"
-          {...register("message")}
-        />
+        <TextArea placeholder="message" {...register("message")} />
         {errors.message && <ErrorComp>{errors.message.message}</ErrorComp>}
         {isSuccess && (
           <Alert color="success" className="mt-6">

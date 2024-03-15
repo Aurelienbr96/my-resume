@@ -1,5 +1,5 @@
-import classNames from 'classnames';
-import { FilterDownIcon, FilterUpIcon } from '../../../assets/icons';
+import classNames from "classnames";
+import { FilterDownIcon, FilterUpIcon } from "../../../../../assets/icons";
 
 type Props = {
   isOpen: boolean;

@@ -12,9 +12,7 @@ coverage
 dist
 dist-ssr
 *.local
-
-# todo later
-src/modules/recommendations/*
+.env
 
 # Editor directories and files
 .vscode/*
