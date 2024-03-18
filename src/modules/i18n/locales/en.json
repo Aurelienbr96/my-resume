@@ -49,7 +49,7 @@
       "links": [
         "https://apps.apple.com/fr/app/prium-one/id1588692288"
       ],
-      "description": "As a Lead Developer specializing in React JS and React Native, I led the complete redesign of Prium Portage's internal website, which accumulated a significant technical debt. I conducted the selection process and provided recommendations regarding the technical stack to be adopted, including React Hook Form, Tailwind, Vite, Axios, XState, among others. I established a scalable architecture with unit tests while ensuring the implementation of user interfaces designed by the UI/UX design team. Additionally, I worked on the development from scratch of the Prium One mobile application.",
+      "description": "As the lead ReactJS / React Native developer at Prium Solution, I played a crucial role in leading the development of their web and mobile applications. I collaborated with a team of developers to improve the existing code of their website.\n\n Key achievements: \n\n• Conducted an audit of the current web application to identify poor practices and development processes leading to decreased productivity and a strong tendency to create side effects. \n• Redesigned the existing web application, from version 1 to version 2, introducing a more modern technical stack (transitioning from class components to functional components, adopting Vite, React Query, Jest & React Testing Library). \n• Implemented a scalable front-end architecture.\n• Developed the Prium One mobile application in React Native.",
       "skills": [
         "JavaScript",
         "ReactJS",
@@ -71,7 +71,7 @@
       "startDate": "2021-05-01",
       "endDate": "2021-06-31",
       "location": "remote",
-      "description": "One month mission where I was improving the test coverage of the application (Jest & react-testing-library)",
+      "description": "Short-term mission at Folk with the goal of increasing the application's test coverage.\n\n Technologies: Jest / React Testing Library / GraphQL",
       "skills": [
         "JavaScript",
         "ReactJS",
@@ -89,7 +89,7 @@
       "startDate": "2021-03-01",
       "endDate": "2021-05-31",
       "location": "remote",
-      "description": "Development of a POC for the Automated parking control of the city of Amsterdam. I had the opportunity to work first time with a state machine - XState.",
+      "description": "Development of a POC (Proof of Concept) for creating a front-end application dedicated to managing parking spaces in Amsterdam. \n\n Egis had responded to a call for tenders for the development of this application in ReactJS. The purpose of this POC for the client was to choose the development company to collaborate with. \n\n This POC allowed them to win the project, which started a few months later. However, I was already committed to another mission and therefore could not continue this adventure with them.",
       "skills": [
         "JavaScript",
         "ReactJS",
@@ -121,7 +121,7 @@
       "link": "https://www.dokki.app/",
       "endDate": "2020-05-31",
       "location": "remote - Caen",
-      "description": "I was working on the Dokki application, an E Learning application as lead developer. I took charge of the project for 5 months and I was responsible for making the technical choices for the project. I implemented an architecture where the Redux store was reused between the web app and mobile app part in TDD. I also participated in the formation of juniors and work-study students in the company.",
+      "description": "I joined the Agile team at FuturComposé as a Lead Developer, bringing my expertise in React Native and software engineering. This mission initially took place over a short period on-site, then fully remotely:\n\n• Analysis and decision-making on technical choices for all web and mobile applications of the project.\n• Establishment of the quality process.\n• Development of an application in React Native.\n• Collaboration with another team in web development (ReactJS) for a joint project, intended to be integrated into both React and React Native applications. \n• Training of one to three profiles in React Native and various development practices. Technologies used: React, React Native, Jest, TypeScript, GitLab & GitLab-CI, NPM.",
       "skills": [
         "React Native",
         "Typescript",
@@ -134,12 +134,12 @@
       "name": "FIDME",
       "logo": "https://media.licdn.com/dms/image/C560BAQF-QWfhANHI8w/company-logo_100_100/0/1646036823237/fidme_logo?e=1717632000&v=beta&t=1XT3m8h0-zEjLxm-xlU8vf42XLWk7MJo-EwWtmUr3ZI",
       "status": "Freelance",
-      "role": "Développeur React Native Freelance",
+      "role": "React Native developer",
       "startDate": "2019-03-31",
       "link": "https://www.fidme.com/",
       "endDate": "2019-08-31",
       "highlights": [],
-      "description": "Fidme est une application avec plus d'un million d'utilisateurs, sur laquelle j'ai pu participé à sa refonte en tant que développeur React Native.\nJ'ai aussi travaillé avec les technologies Mobx et Jest.",
+      "description": "Redesign of the Fidme app (a mobile application with over a million users) to React Native (the previous version had been developed natively and was becoming difficult to maintain).\n\nDevelopment of the application in React Native, following a design established by a UX/UI designer. Collaboration with back-end developers.\n\nTechnologies: React Native, Mobx, Jest, git",
       "url": "https://www.linkedin.com/company/fidme/",
       "location": "Bordeaux",
       "skills": [
@@ -154,12 +154,12 @@
       "name": "dotmind",
       "logo": "https://media.licdn.com/dms/image/C4D0BAQFikbvl-wu-pg/company-logo_100_100/0/1630463389448/dotmind_logo?e=1717632000&v=beta&t=sKcqC-o_S_AXYymNUE1JXxfwT4yczsy7NCG95j8tyRA",
       "status": "Freelance",
-      "role": "Développeur ReactJS freelance",
+      "role": "ReactJS developer",
       "startDate": "2019-02-28",
       "link": "https://www.ffr.fr/",
       "endDate": "2019-02-28",
       "highlights": [],
-      "description": "Développement de la FFR TV pour le nouveau site de la fédération Française de rugby en ReactJS.\n    - https://www.ffr.fr/ffr-tv",
+      "description": "Integration of UX/UI mockups for the development of the FFR (French Rugby Federation) TV section.\n\nConnection with the YouTube API to list their playlist more efficiently directly from their website.",
       "url": "https://www.linkedin.com/company/dotmind/",
       "location": "Région de Bordeaux, France",
       "skills": [
@@ -173,13 +173,13 @@
     {
       "name": "ACTUM Digital",
       "logo": "https://media.licdn.com/dms/image/D4E0BAQHGPlz5jjn71w/company-logo_100_100/0/1688113871152/actumdigital_logo?e=1717632000&v=beta&t=mzekZpSfLZN5khPQoMIV5jx8F7BvL15YOOMKVYa6r6w",
-      "role": "Développeur Full Stack",
+      "role": "React Native Developer",
       "startDate": "2017-09-30",
       "link": "https://regiojet.com/services/app",
       "endDate": "2017-12-31",
       "status": "contract",
       "highlights": [],
-      "description": "Mission de 4 mois à l'étranger.\nDéveloppement d'une application mobile en React Native pour Regiojet, une\nentreprise ferroviaire de transport de voyageurs en République tchèque et\nSlovaquie. L'application devait lister les tickets en fonction des destinations\nchoisies, permettre à l'utilisateur de sélectionner une place et d'acheter un\nticket. Elle devait intégrer un mécanisme d'internationalisation.",
+      "description": "Development of a mobile application in React Native for Regiojet, a passenger rail transport company in the Czech Republic and Slovakia. The application was supposed to list tickets based on selected destinations, allow the user to select a seat and purchase a ticket. It was required to incorporate an internationalization mechanism.",
       "url": "https://www.linkedin.com/company/actumdigital/",
       "location": "Prague, République tchèque",
       "skills": [
