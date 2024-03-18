@@ -5,7 +5,7 @@ import { useCallback, useRef, useState } from "react";
 import { useHandleSpyScroll } from "./hooks/useHandleSpyScroll";
 import { useTranslation } from "react-i18next";
 import { MobileAnimatedComponent } from "../common/components/animatedComponents/MobileAnimatedComponent";
-import { RecommendationsSection } from "./sections/RecommendationsSection";
+// import { RecommendationsSection } from "./sections/RecommendationsSection";
 import { StickySection } from "./components/StickySection";
 
 export type SectionRef = (HTMLDivElement | null)[];
@@ -63,14 +63,14 @@ export const HomePage = () => {
             </MobileAnimatedComponent>
           )}
         </div>
-        <div id="recommendations" ref={(el) => (sectionRefs.current[3] = el)}>
+        {/* <div id="recommendations" ref={(el) => (sectionRefs.current[3] = el)}>
           {activeAnimation >= 5 && (
             <>
               <StickySection>Recommendations</StickySection>
               <RecommendationsSection />
             </>
           )}
-        </div>
+        </div> */}
         <div
           id="contact"
           ref={(el) => (sectionRefs.current[2] = el)}
