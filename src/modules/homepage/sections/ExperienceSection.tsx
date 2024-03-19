@@ -36,6 +36,9 @@ export const ExperienceSection = () => {
 
   return (
     <div>
+      <p className="text-3xl dark:text-dark-highlight hidden lg:block">
+        Experiences
+      </p>
       {Array.from(searchParams).length > 0 && (
         <button onClick={handleRemoveFilters}>remove filters</button>
       )}

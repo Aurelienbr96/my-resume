@@ -1,0 +1,11 @@
+FROM node:21
+
+WORKDIR /src
+
+COPY . .
+
+RUN yarn
+
+RUN npm run dev
+
+CMD ["npm", "run", "serve"]
