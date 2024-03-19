@@ -1,5 +1,3 @@
-import { useGetRecommendations } from "../../../admin/recommendations/hooks/useGetRecommendations";
-
 const HrefLine = ({ isActive }: { isActive: boolean }) => (
   <span
     className={`w-4 h-px mr-2 bg-black  transition-all duration-250 group-hover:w-8 group-hover:bg-dark-purple dark:group-hover:bg-dark-highlight  ${isActive ? "w-8 dark:bg-dark-highlight" : "dark:bg-dark-text"}`}
@@ -27,17 +25,16 @@ const MenuText = ({ children, isActive, href }: MenuTextProps) => (
 type Props = {
   isAboutActive: boolean;
   isExperienceActive: boolean;
-  isRecommendationsActive: boolean;
   isContactActive: boolean;
+  isProjectsActive: boolean;
 };
 
 export const AboutDesktopMenu = ({
   isAboutActive,
   isExperienceActive,
-  isRecommendationsActive,
   isContactActive,
+  isProjectsActive,
 }: Props) => {
-  const { recommendations } = useGetRecommendations();
   return (
     <nav className="hidden md:block">
       <ul className="mt-10 w-max">
@@ -47,11 +44,9 @@ export const AboutDesktopMenu = ({
         <MenuText href="#experiences" isActive={isExperienceActive}>
           Experiences
         </MenuText>
-        {recommendations && recommendations.length > 0 && (
-          <MenuText href="#recommendations" isActive={isRecommendationsActive}>
-            Recommendations
-          </MenuText>
-        )}
+        <MenuText href="#projects" isActive={isProjectsActive}>
+          Projects
+        </MenuText>
         <MenuText href="#contact" isActive={isContactActive}>
           Contact
         </MenuText>

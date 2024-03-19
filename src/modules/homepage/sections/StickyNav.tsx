@@ -23,7 +23,7 @@ export const StickyNav = ({
   const isAboutActive = activeSection === "about";
   const isExperienceActive = activeSection === "experiences";
   const isContactActive = activeSection === "contact";
-  const isRecommendationsActive = activeSection === "recommendations";
+  const isProjectsActive = activeSection === "projects";
 
   return (
     <div className="md:sticky px-6 md:px-0 md:left-0 md:top-0 text-left h-full pb-20 flex flex-1 flex-col justify-between">
@@ -83,7 +83,7 @@ export const StickyNav = ({
             isAboutActive={isAboutActive}
             isExperienceActive={isExperienceActive}
             isContactActive={isContactActive}
-            isRecommendationsActive={isRecommendationsActive}
+            isProjectsActive={isProjectsActive}
           />
         </MobileAnimatedComponent>
 

@@ -5,8 +5,8 @@ import { useCallback, useRef, useState } from "react";
 import { useHandleSpyScroll } from "./hooks/useHandleSpyScroll";
 import { useTranslation } from "react-i18next";
 import { MobileAnimatedComponent } from "../common/components/animatedComponents/MobileAnimatedComponent";
-import { RecommendationsSection } from "./sections/RecommendationsSection";
 import { StickySection } from "./components/StickySection";
+import { ProjectSection } from "./sections/ProjectSection";
 
 export type SectionRef = (HTMLDivElement | null)[];
 
@@ -63,18 +63,24 @@ export const HomePage = () => {
             </MobileAnimatedComponent>
           )}
         </div>
-        <div id="recommendations" ref={(el) => (sectionRefs.current[3] = el)}>
+
+        <div
+          className="pt-16"
+          id="projects"
+          ref={(el) => (sectionRefs.current[2] = el)}
+        >
           {activeAnimation >= 5 && (
             <>
-              <StickySection>Recommendations</StickySection>
-              <RecommendationsSection />
+              <StickySection>Feature projects</StickySection>
+              <ProjectSection />
             </>
           )}
         </div>
+
         <div
           id="contact"
-          ref={(el) => (sectionRefs.current[2] = el)}
-          className="md:relative md:right-[15%] py-16 lg:pb-60 pt-20"
+          ref={(el) => (sectionRefs.current[3] = el)}
+          className="self-center py-16 lg:pb-60 pt-20"
         >
           {activeAnimation >= 5 && (
             <>
