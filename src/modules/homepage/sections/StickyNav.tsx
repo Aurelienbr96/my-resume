@@ -26,7 +26,9 @@ export const StickyNav = ({
   const isProjectsActive = activeSection === "projects";
 
   return (
-    <div className="md:sticky px-6 md:px-0 md:left-0 md:top-0 text-left h-full pb-20 flex flex-1 flex-col justify-between">
+    <div
+      className={`px-6 md:px-0 md:left-0 md:top-0 text-left h-full pb-20 flex flex-1 flex-col justify-between`}
+    >
       <div>
         <MobileAnimatedComponent
           activeAnimation={activeAnimation}

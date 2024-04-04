@@ -1,7 +1,7 @@
 import { ExperienceSection } from "./sections/ExperienceSection";
 import { ContactSection } from "./sections/ContactSection";
 import { StickyNav } from "./sections/StickyNav";
-import { useCallback, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { useHandleSpyScroll } from "./hooks/useHandleSpyScroll";
 import { useTranslation } from "react-i18next";
 import { MobileAnimatedComponent } from "../common/components/animatedComponents/MobileAnimatedComponent";
@@ -10,9 +10,13 @@ import { ProjectSection } from "./sections/ProjectSection";
 
 export type SectionRef = (HTMLDivElement | null)[];
 
+const scrollYEndExperienceSection = 2084;
+
 export const HomePage = () => {
   const sectionRefs = useRef<SectionRef>([]);
   const { t } = useTranslation();
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const [isSticky, setIsSticky] = useState(false);
   const { activeSection } = useHandleSpyScroll(sectionRefs);
   const [activeAnimation, setActiveAnimation] = useState(
     screen.width > 640 ? 0 : 50,
@@ -21,9 +25,35 @@ export const HomePage = () => {
     setActiveAnimation((current) => current + 1);
   }, []);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollPos = window.scrollY;
+      setScrollPosition(currentScrollPos);
+
+      if (currentScrollPos > scrollYEndExperienceSection) {
+        setIsSticky(false);
+      } else {
+        setIsSticky(true);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <div className="flex flex-col mt-6 md:mt-0 lg:pr-64 md:flex-row md:gap-4">
-      <div className="md:sticky md:top-0 lg:px-32 lg:py-20 md:max-h-screen">
+      <div
+        className={`${isSticky ? "md:sticky md:top-0" : "md:relative"}  lg:px-32 lg:py-20 md:max-h-screen`}
+        style={{
+          top: isSticky
+            ? undefined
+            : scrollPosition >= scrollYEndExperienceSection
+              ? scrollYEndExperienceSection
+              : `${scrollPosition}px`,
+        }}
+      >
         <StickyNav
           activeAnimation={activeAnimation}
           handleAnimationEnd={handleAnimationEnd}
