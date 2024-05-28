@@ -46,7 +46,7 @@ export const StickyNav = ({
           onAnimationEnd={handleAnimationEnd}
         >
           <p className="font-bold text-2xl dark:text-dark-highlight">
-            Senior front end engineer
+            Senior Fullstack engineer
           </p>
         </MobileAnimatedComponent>
 

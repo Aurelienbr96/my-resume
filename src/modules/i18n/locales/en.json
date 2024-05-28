@@ -18,11 +18,11 @@
     "name": "Aurélien Brachet",
     "label": "React Native/ReactJS developer",
     "image": "",
-    "introduction": "I am a ReactJS developer dedicated to building eye-catching web applications that prioritize user engagement and accessibility, bringing digital concepts to life with precision.",
+    "introduction": "I am a Fullstack developer dedicated to building eye-catching web applications that prioritize user engagement and accessibility, bringing digital concepts to life with precision.",
     "email": "aurelienbrachet123@gmail.com",
     "phone": "",
     "url": "",
-    "summary": " Back in 2014, I decided to try my hand at creating simple websites using HTML and CSS. Without even noticing, I found myself learning more and more about web development everyday.\n\n Fast forward in 2016, after the good old days of JQuery were over I decided to learn ReactJS and built my career around this library.\n\n I had the opportunity to work for different type of company, from big corporation to startups. My main focus this days is to keep learning about web development while learning more about algorithm (I started daily Leetcode recently).\n\n Even though most of my competences are front end related, I am keen to learn new frameworks and technologies. I most enjoy building software where quality and scalable code is the norm.\n\n I am right now looking for a full stack job where I could give my expertise on the front end while helping on the back end.",
+    "summary": " Back in 2014, I decided to try my hand at creating simple websites using HTML and CSS. Without even noticing, I found myself learning more and more about web development everyday.\n\n Fast forward in 2016, after the good old days of JQuery were over I decided to learn ReactJS and built my career around the javascript ecosystem.\n\n I had the opportunity to work for different type of company, from big corporation to startups. My main focus this days is to keep learning about web development while learning more about different technologies, I have recently felt in love with Golang and vue.\n\n I most enjoy building software where quality and scalable code is the norm.",
     "location": {
       "countryCode": "FR",
       "address": ""
@@ -37,6 +37,23 @@
     "view-resume": "View my full resume"
   },
   "work": [
+    {
+      "logo": "https://media.licdn.com/dms/image/D4E0BAQEygOrWebM3fw/company-logo_200_200/0/1686145747487?e=1724889600&v=beta&t=pq0w_30L9OiKyDNtnKab19FGUHNycmVSZyC95L1TUd0",
+      "role": "Developer Fullstack",
+      "name": "eSWIT",
+      "status": "Freelance",
+      "startDate": "2024-04-01",
+      "endDate": "-",
+      "location": "remote",
+      "skills": [
+        "ReactJS",
+        "TypeScript",
+        "Golang",
+        "NodeJS",
+        "Nest",
+        "Azure"
+      ]
+    },
     {
       "logo": "https://media.licdn.com/dms/image/C4E0BAQE-7EfSMlZAVQ/company-logo_200_200/0/1631316758542?e=1717632000&v=beta&t=wFyhXkzfYK3unFeyocEjGxz9QAXxkjwKTSm2FQmBP9o",
       "role": "Development Lead ReactJS & React Native",

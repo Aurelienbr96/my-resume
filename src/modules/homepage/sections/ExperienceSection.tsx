@@ -46,6 +46,7 @@ export const ExperienceSection = () => {
         <Timeline className="mt-6 group border-transparent md:border-gray-200 mr-10 md:mr-0">
           {filteredData.map((work: JSONData["work"][number], index: number) => (
             <ExperienceBlock
+              key={index}
               work={work}
               index={index}
               handleFilterClick={handleFilterClick}
