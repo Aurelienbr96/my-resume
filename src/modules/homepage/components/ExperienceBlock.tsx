@@ -18,6 +18,12 @@ type Props = {
   searchParamsValues: string[];
 };
 
+const formatDate = (date: string) => {
+  return date && dayjs(date).isValid()
+    ? dayjs(date).format("MMM. YYYY")
+    : "Present";
+};
+
 export const ExperienceBlock = ({
   work,
   index,
@@ -28,8 +34,8 @@ export const ExperienceBlock = ({
   const isCurrentlyHovered = (index: number) =>
     hoveredIndex !== null && index === hoveredIndex;
 
-  const handleOnNavigateLink = (link: string) => () => {
-    window.open(link, "_blank");
+  const handleOnNavigateLink = (link?: string) => () => {
+    if (link) window.open(link, "_blank");
   };
   return (
     <TimelineItem
@@ -58,9 +64,7 @@ export const ExperienceBlock = ({
         </div>
         <Timeline.Time>
           <span className="mt-10">
-            {dayjs(work.startDate).format("MMM. YYYY") +
-              " - " +
-              dayjs(work.endDate).format("MMM. YYYY")}
+            {formatDate(work.startDate) + " - " + formatDate(work.endDate)}
           </span>
         </Timeline.Time>
         <Timeline.Body className="my-2">
