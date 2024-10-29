@@ -1,14 +1,14 @@
 import { Timeline } from "flowbite-react";
 import { useTranslation } from "react-i18next";
-import enData from "../../i18n/locales/en.json";
 import { IconRedirect } from "../../../assets/icons";
 import { useRef } from "react";
 import { useHandleFilterClick } from "../../router/hooks/useHandleFilterClick";
 import { useAddAnimationOnScroll } from "./hooks/useAddAnimationOnScroll";
 import { ExperienceBlock } from "../components/ExperienceBlock";
 import { getFilteredData } from "./utils/getFilteredData";
+import resumeData from "../../i18n/locales/en";
 
-export type JSONData = typeof enData;
+export type JSONData = typeof resumeData;
 
 export const ExperienceSection = () => {
   const { t } = useTranslation();

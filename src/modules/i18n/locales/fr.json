@@ -38,7 +38,7 @@
   },
   "work": [
     {
-      "logo": "https://media.licdn.com/dms/image/D4E0BAQEygOrWebM3fw/company-logo_200_200/0/1686145747487?e=1724889600&v=beta&t=pq0w_30L9OiKyDNtnKab19FGUHNycmVSZyC95L1TUd0",
+      "logo": "/company_img/eswit.jpeg",
       "role": "Développeur Fullstack",
       "name": "eSWIT",
       "status": "Freelance",
@@ -55,7 +55,7 @@
       ]
     },
     {
-      "logo": "https://media.licdn.com/dms/image/C4E0BAQE-7EfSMlZAVQ/company-logo_200_200/0/1631316758542?e=1717632000&v=beta&t=wFyhXkzfYK3unFeyocEjGxz9QAXxkjwKTSm2FQmBP9o",
+      "logo": "/company_img/prium_consulting_logo.jpeg",
       "name": "Prium Solutions",
       "status": "Freelance",
       "role": "Development Lead ReactJS & React Native",
@@ -82,7 +82,7 @@
       ]
     },
     {
-      "logo": "https://media.licdn.com/dms/image/C4E0BAQF0PeCwqftXBw/company-logo_200_200/0/1651594527767/folkhq_logo?e=1717632000&v=beta&t=3ZribKFEn75uxsu4z3duF1NrdFAOCGFhYvltrHtumXw",
+      "logo": "/company_img/egis_logo.jpeg",
       "name": "folk",
       "status": "Freelance",
       "role": "Développeur React JS",
@@ -100,7 +100,7 @@
       ]
     },
     {
-      "logo": "https://media.licdn.com/dms/image/D4E0BAQEAd0aSequAmQ/company-logo_200_200/0/1666266859617/egis_logo?e=1717632000&v=beta&t=zDaVAoVjiFoRdcSjfqrWpID7by2jUuCQWEVH7noulZY",
+      "logo": "/company_img/egis_logo.jpeg",
       "name": "Egis",
       "status": "Freelance",
       "role": "Développeur ReactJS",
@@ -136,7 +136,7 @@
       ]
     },
     {
-      "logo": "https://media.licdn.com/dms/image/C4E0BAQHK1L0f2g3SZA/company-logo_200_200/0/1674655319645/dokkigroupe_logo?e=1717632000&v=beta&t=XvLSN_a1aKSTQ8b7ka3AcNRxTq7jw0reGNwWzAQHOg0",
+      "logo": "/company_img/dokkigroupe_logo.jpeg",
       "name": "Futur Composé",
       "status": "Freelance",
       "role": "Lead Dévelopeur React Native",
@@ -160,7 +160,7 @@
       "status": "Freelance",
       "role": "Développeur React Native Freelance",
       "link": "https://www.fidme.com/",
-      "logo": "https://media.licdn.com/dms/image/C560BAQF-QWfhANHI8w/company-logo_100_100/0/1646036823237/fidme_logo?e=1717632000&v=beta&t=1XT3m8h0-zEjLxm-xlU8vf42XLWk7MJo-EwWtmUr3ZI",
+      "logo": "/company_img/fidme_logo.jpeg",
       "startDate": "2019-03-31",
       "endDate": "2019-08-31",
       "highlights": [],
@@ -179,7 +179,7 @@
       "name": "dotmind",
       "status": "Freelance",
       "role": "Développeur ReactJS freelance",
-      "logo": "https://media.licdn.com/dms/image/C4D0BAQFikbvl-wu-pg/company-logo_100_100/0/1630463389448/dotmind_logo?e=1717632000&v=beta&t=sKcqC-o_S_AXYymNUE1JXxfwT4yczsy7NCG95j8tyRA",
+      "logo": "/company_img/dotmind.webp",
       "startDate": "2019-02-28",
       "link": "https://www.ffr.fr/",
       "endDate": "2019-02-28",
@@ -198,7 +198,7 @@
     {
       "name": "ACTUM Digital",
       "role": "Développeur Full Stack",
-      "logo": "https://media.licdn.com/dms/image/D4E0BAQHGPlz5jjn71w/company-logo_100_100/0/1688113871152/actumdigital_logo?e=1717632000&v=beta&t=mzekZpSfLZN5khPQoMIV5jx8F7BvL15YOOMKVYa6r6w",
+      "logo": "/company_img/actumdigital_logo.jpeg",
       "startDate": "2017-09-30",
       "link": "https://regiojet.com/services/app",
       "endDate": "2017-12-31",
