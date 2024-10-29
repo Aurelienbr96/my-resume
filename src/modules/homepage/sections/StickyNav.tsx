@@ -1,10 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { MobileAnimatedComponent } from "../../common/components/animatedComponents/MobileAnimatedComponent";
 import { SocialNetworks } from "../components/SocialNetworks";
-import me from "../../../assets/img/me.jpeg";
-import { ThemeSwitch } from "../../common/components/buttons/ThemeSwitch";
-import { LanguageSwitch } from "../../i18n/components/LanguageSwitch";
-import { supportedLanguages } from "../../i18n/constants/supportedLanguages";
+
 import { AboutDesktopMenu } from "./components/AboutDesktopMenu";
 
 type Props = {
@@ -22,7 +19,6 @@ export const StickyNav = ({
 
   const isAboutActive = activeSection === "about";
   const isExperienceActive = activeSection === "experiences";
-  const isContactActive = activeSection === "contact";
   const isProjectsActive = activeSection === "projects";
 
   return (
@@ -63,46 +59,18 @@ export const StickyNav = ({
 
         <MobileAnimatedComponent
           activeAnimation={activeAnimation}
-          animationIndex={4}
-          animationClass="animate-fade-in-left "
-          onAnimationEnd={handleAnimationEnd}
-        >
-          <div className=" hidden md:flex items-center">
-            <ThemeSwitch />
-            <LanguageSwitch className="ml-4" languages={supportedLanguages} />
-          </div>
-        </MobileAnimatedComponent>
-
-        <MobileAnimatedComponent
-          activeAnimation={activeAnimation}
-          animationIndex={4}
+          animationIndex={3}
           animationClass="animate-fade-in-left "
           onAnimationEnd={handleAnimationEnd}
         >
           <AboutDesktopMenu
             isAboutActive={isAboutActive}
             isExperienceActive={isExperienceActive}
-            isContactActive={isContactActive}
             isProjectsActive={isProjectsActive}
           />
         </MobileAnimatedComponent>
-
-        <MobileAnimatedComponent
-          activeAnimation={activeAnimation}
-          animationIndex={4}
-          animationClass="animate-fade-in-left "
-          onAnimationEnd={handleAnimationEnd}
-        >
-          <div className="flex w-full justify-center md:justify-start">
-            <img
-              src={me}
-              alt="me"
-              className="rounded-full h-[200px] w-[200px] mt-14 shadow-strong"
-            />
-          </div>
-        </MobileAnimatedComponent>
       </div>
-      {activeAnimation >= 5 && <SocialNetworks />}
+      {activeAnimation >= 4 && <SocialNetworks />}
     </div>
   );
 };

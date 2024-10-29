@@ -25,14 +25,12 @@ const MenuText = ({ children, isActive, href }: MenuTextProps) => (
 type Props = {
   isAboutActive: boolean;
   isExperienceActive: boolean;
-  isContactActive: boolean;
   isProjectsActive: boolean;
 };
 
 export const AboutDesktopMenu = ({
   isAboutActive,
   isExperienceActive,
-  isContactActive,
   isProjectsActive,
 }: Props) => {
   return (
@@ -46,9 +44,6 @@ export const AboutDesktopMenu = ({
         </MenuText>
         <MenuText href="#projects" isActive={isProjectsActive}>
           Projects
-        </MenuText>
-        <MenuText href="#contact" isActive={isContactActive}>
-          Contact
         </MenuText>
       </ul>
     </nav>

@@ -1,5 +1,5 @@
 import { ExperienceSection } from "./sections/ExperienceSection";
-import { ContactSection } from "./sections/ContactSection";
+
 import { StickyNav } from "./sections/StickyNav";
 import { useCallback, useRef, useState } from "react";
 import { useHandleSpyScroll } from "./hooks/useHandleSpyScroll";
@@ -77,7 +77,7 @@ export const HomePage = () => {
           )}
         </div>
 
-        <div
+        {/* <div
           id="contact"
           ref={(el) => (sectionRefs.current[3] = el)}
           className="self-center py-16 lg:pb-60 pt-20"
@@ -88,7 +88,7 @@ export const HomePage = () => {
               <ContactSection />
             </>
           )}
-        </div>
+        </div> */}
       </div>
     </div>
   );

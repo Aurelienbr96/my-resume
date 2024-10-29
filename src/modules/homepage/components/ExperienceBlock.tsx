@@ -10,6 +10,7 @@ import { WorkLink } from "../sections/components/WorkLink";
 import dayjs from "dayjs";
 import { JSONData } from "../sections/ExperienceSection";
 import { useState } from "react";
+import Markdown from "react-markdown";
 
 type Props = {
   work: JSONData["work"][number];
@@ -37,6 +38,7 @@ export const ExperienceBlock = ({
   const handleOnNavigateLink = (link?: string) => () => {
     if (link) window.open(link, "_blank");
   };
+
   return (
     <TimelineItem
       className={`animate-on-scroll opacity-0 p-0 md:p-4 z-50 transition lg:opacity-100 lg:dark:group-hover:opacity-50 lg:hover:!opacity-100  hover:cursor-pointer dark:lg:group-hover:bg-slate-800/50 dark:lg:hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] dark:lg:hover:drop-shadow-lg bg-white dark:bg-dark shadow-strong rounded-lg`}
@@ -68,10 +70,11 @@ export const ExperienceBlock = ({
           </span>
         </Timeline.Time>
         <Timeline.Body className="my-2">
-          {work.description}
+          <Markdown>{work.description}</Markdown>
           <div className="flex flex-wrap">
-            {work.links?.map((link) => (
+            {work.links?.map((link, i) => (
               <WorkLink
+                key={i}
                 link={link}
                 animationCondition={isCurrentlyHovered(index)}
               >
