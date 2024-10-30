@@ -51,17 +51,15 @@ export const HomePage = () => {
           id="experiences"
           ref={(el) => (sectionRefs.current[1] = el)}
         >
-          {activeAnimation >= 5 && (
-            <MobileAnimatedComponent
-              activeAnimation={activeAnimation}
-              animationIndex={5}
-              animationClass="animate-fade-in-right "
-              onAnimationEnd={handleAnimationEnd}
-            >
-              <StickySection>Experiences</StickySection>
-              <ExperienceSection />
-            </MobileAnimatedComponent>
-          )}
+          <MobileAnimatedComponent
+            activeAnimation={activeAnimation}
+            animationIndex={5}
+            animationClass="animate-fade-in-right "
+            onAnimationEnd={handleAnimationEnd}
+          >
+            <StickySection>Experiences</StickySection>
+            <ExperienceSection />
+          </MobileAnimatedComponent>
         </div>
 
         <div
@@ -69,12 +67,10 @@ export const HomePage = () => {
           id="projects"
           ref={(el) => (sectionRefs.current[2] = el)}
         >
-          {activeAnimation >= 5 && (
-            <>
-              <StickySection>Feature projects</StickySection>
-              <ProjectSection />
-            </>
-          )}
+          <>
+            <StickySection>Feature projects</StickySection>
+            <ProjectSection />
+          </>
         </div>
 
         {/* <div

@@ -49,6 +49,7 @@ export default {
         "dark-purple": "#262745",
         "purple-white": "#efeafb",
         "color-medium-light": "#E9E9E9",
+        "calendly-color": "#00a2ff",
         "color-dark": "#10172B",
         "alice-blue": "#F7FAFC",
         dark: "#0F182C",
