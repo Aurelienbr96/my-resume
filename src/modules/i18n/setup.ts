@@ -15,9 +15,7 @@ i18n
   .use(initReactI18next)
   .use(LanguageDetector)
   .init({
-    //debug: true,
-    lng: "en",
-    fallbackLng: "en",
+    fallbackLng: "en", // or "en" if you prefer
     defaultNS: "common",
     ns,
     interpolation: { escapeValue: false },
