@@ -70,7 +70,7 @@ export const StickyNav = ({
           />
         </MobileAnimatedComponent>
       </div>
-      {activeAnimation >= 4 && <SocialNetworks />}
+      <SocialNetworks />
     </div>
   );
 };
