@@ -25,8 +25,6 @@ const resumeData = {
     email: "aurelienbrachet123@gmail.com",
     phone: "",
     url: "",
-    summary:
-      "Back in 2014, I decided to try my hand at creating simple websites using HTML and CSS. Without even noticing, I found myself learning more and more about web development everyday.\n\n Fast forward in 2016, after the good old days of JQuery were over I decided to learn ReactJS and built my career around the javascript ecosystem.\n\n I had the opportunity to work for different type of company, from big corporation to startups. My main focus this days is to keep learning about web development while learning more about different technologies, I have recently felt in love with Golang and vue.\n\n I most enjoy building software where quality and scalable code is the norm.",
     location: {
       countryCode: "FR",
       address: "",
