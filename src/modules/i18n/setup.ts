@@ -1,14 +1,14 @@
 import { initReactI18next } from "react-i18next";
 import i18n from "i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
-import fr from "./locales/fr.json";
+/* import fr from "./locales/fr.json"; */
 import en from "./locales/en";
 
 const ns = ["common"];
-const supportedLngs = ["en", "fr"];
+const supportedLngs = ["en" /*, "fr" */];
 const resources = {
   en: { common: en },
-  fr: { common: fr },
+  /*   fr: { common: fr }, */
 };
 
 i18n
