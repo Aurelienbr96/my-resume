@@ -3,7 +3,7 @@ import { ExperienceSection } from "./sections/ExperienceSection";
 import { StickyNav } from "./sections/StickyNav";
 import { useCallback, useRef, useState } from "react";
 import { useHandleSpyScroll } from "./hooks/useHandleSpyScroll";
-import { useTranslation } from "react-i18next";
+
 import { MobileAnimatedComponent } from "../common/components/animatedComponents/MobileAnimatedComponent";
 import { StickySection } from "./components/StickySection";
 import { ProjectSection } from "./sections/ProjectSection";
@@ -12,7 +12,7 @@ export type SectionRef = (HTMLDivElement | null)[];
 
 export const HomePage = () => {
   const sectionRefs = useRef<SectionRef>([]);
-  const { t } = useTranslation();
+
   const { activeSection } = useHandleSpyScroll(sectionRefs);
   const [activeAnimation, setActiveAnimation] = useState(
     screen.width > 640 ? 0 : 50,
@@ -43,11 +43,39 @@ export const HomePage = () => {
             activeAnimation={activeAnimation}
           >
             <StickySection>About</StickySection>
-            <p className="px-6">{t("basics.summary")}</p>
+            <p>
+              Back in 2014, I decided to try my hand at creating simple websites
+              using{" "}
+              <span className="text-light-grey">HTML, CSS JQuery and PHP</span>{" "}
+              (good old WAMP server) . Before I knew it, I was learning more
+              about web development every day.
+            </p>
+            <br />
+            <p>
+              Fast forward to 2016, after the days of jQuery were behind us, I
+              decided to dive into{" "}
+              <span className="text-light-grey">ReactJS and Node</span>,
+              building my career around the JavaScript ecosystem.
+            </p>
+            <br />
+            <p>
+              Since then, I've had the opportunity to work in various types of
+              companies, from large{" "}
+              <span className="text-light-grey">corporations to startups</span>.
+              These days, my main focus is continuing to learn about web
+              development and exploring new technologies. Recently, I've fallen
+              in love with <span className="text-light-grey">Golang</span>.
+            </p>
+            <br />
+            <p>
+              I enjoy building software where{" "}
+              <span className="text-light-grey">quality and scalable code</span>{" "}
+              are the standard.
+            </p>
           </MobileAnimatedComponent>
         </div>
         <div
-          className="pt-16"
+          className="pt-8"
           id="experiences"
           ref={(el) => (sectionRefs.current[1] = el)}
         >
