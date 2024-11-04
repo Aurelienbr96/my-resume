@@ -7,15 +7,17 @@ import { useHandleSpyScroll } from "./hooks/useHandleSpyScroll";
 import { MobileAnimatedComponent } from "../common/components/animatedComponents/MobileAnimatedComponent";
 import { StickySection } from "./components/StickySection";
 import { ProjectSection } from "./sections/ProjectSection";
+import { useScreenWidth } from "../common/hooks/useScreenWidth";
 
 export type SectionRef = (HTMLDivElement | null)[];
 
 export const HomePage = () => {
+  const [screenWidth] = useScreenWidth();
   const sectionRefs = useRef<SectionRef>([]);
 
   const { activeSection } = useHandleSpyScroll(sectionRefs);
   const [activeAnimation, setActiveAnimation] = useState(
-    screen.width > 640 ? 0 : 50,
+    screenWidth > 640 ? 0 : 50,
   );
   const handleAnimationEnd = useCallback(() => {
     setActiveAnimation((current) => current + 1);
@@ -43,35 +45,44 @@ export const HomePage = () => {
             activeAnimation={activeAnimation}
           >
             <StickySection>About</StickySection>
-            <p>
-              Back in 2014, I decided to try my hand at creating simple websites
-              using{" "}
-              <span className="text-light-grey">HTML, CSS JQuery and PHP</span>{" "}
-              (good old WAMP server) . Before I knew it, I was learning more
-              about web development every day.
-            </p>
-            <br />
-            <p>
-              Fast forward to 2016, after the days of jQuery were behind us, I
-              decided to dive into{" "}
-              <span className="text-light-grey">ReactJS and Node</span>,
-              building my career around the JavaScript ecosystem.
-            </p>
-            <br />
-            <p>
-              Since then, I've had the opportunity to work in various types of
-              companies, from large{" "}
-              <span className="text-light-grey">corporations to startups</span>.
-              These days, my main focus is continuing to learn about web
-              development and exploring new technologies. Recently, I've fallen
-              in love with <span className="text-light-grey">Golang</span>.
-            </p>
-            <br />
-            <p>
-              I enjoy building software where{" "}
-              <span className="text-light-grey">quality and scalable code</span>{" "}
-              are the standard.
-            </p>
+            <div className="px-6 lg:px-0">
+              <p>
+                Back in 2014, I decided to try my hand at creating simple
+                websites using{" "}
+                <span className="text-light-grey">
+                  HTML, CSS JQuery and PHP
+                </span>{" "}
+                (good old WAMP server) . Before I knew it, I was learning more
+                about web development every day.
+              </p>
+              <br />
+              <p>
+                Fast forward to 2016, after the days of jQuery were behind us, I
+                decided to dive into{" "}
+                <span className="text-light-grey">ReactJS and Node</span>,
+                building my career around the JavaScript ecosystem.
+              </p>
+              <br />
+              <p>
+                Since then, I've had the opportunity to work in various types of
+                companies, from large{" "}
+                <span className="text-light-grey">
+                  corporations to startups
+                </span>
+                . These days, my main focus is continuing to learn about web
+                development and exploring new technologies. Recently, I've
+                fallen in love with{" "}
+                <span className="text-light-grey">Golang</span>.
+              </p>
+              <br />
+              <p>
+                I enjoy building software where{" "}
+                <span className="text-light-grey">
+                  quality and scalable code
+                </span>{" "}
+                are the standard.
+              </p>
+            </div>
           </MobileAnimatedComponent>
         </div>
         <div

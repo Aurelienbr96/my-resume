@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { useEffect } from "react";
+import { useScreenWidth } from "../../../common/hooks/useScreenWidth";
 
 /* eslint-disable @typescript-eslint/ban-ts-comment */
 export const useAddAnimationOnScroll = (
@@ -7,12 +8,12 @@ export const useAddAnimationOnScroll = (
   animationStateRef: any,
   selector: string,
 ) => {
+  const [screenWidth] = useScreenWidth();
   useEffect(() => {
     if (containerRef.current) {
       const elements =
         // @ts-ignore
         containerRef.current.querySelectorAll(selector);
-      const screenWidth = window.innerWidth;
 
       if (screenWidth <= 768) {
         const observer = new IntersectionObserver(
@@ -49,5 +50,5 @@ export const useAddAnimationOnScroll = (
         return () => elements.forEach((el: Element) => observer.unobserve(el));
       }
     }
-  }, [animationStateRef, containerRef, selector]);
+  }, [animationStateRef, containerRef, selector, screenWidth]);
 };
